@@ -1,0 +1,129 @@
+<img alt="" src="/images/covers/cot.jpg" style="width: 100%; height: 280px; object-fit: cover; object-position: center 40%; display: block; background: #F7F7F5"/>
+<article class="prose" style="width: 100%; max-width: 768px; margin: 0 auto; padding: 0 24px 96px; box-sizing: border-box">
+<div aria-hidden="true" style="font-size: 72px; line-height: 1; margin-top: -40px">🎓</div>
+<h1 style="margin: 16px 0 8px; font-size: 40px; line-height: 48px; font-weight: 700; letter-spacing: -0.01em">C.O.T</h1>
+<p style="font-size: 18px; line-height: 28px; color: #5F5E5B">Canada Online Tutoring ran on phone calls and emails. I turned it into a mobile app with recurring revenue built in.</p>
+<dl style="display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 10px 16px; margin: 0 0 24px; padding: 16px 0; border-top: 1px solid #E9E9E7; border-bottom: 1px solid #E9E9E7; font-size: 14px; line-height: 20px">
+<dt style="color: #787774">Status</dt>
+<dd style="margin: 0"><span style="font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 4px; background: #D3E5EF; color: #183347">MVP, handed off</span></dd>
+<dt style="color: #787774">Client</dt>
+<dd style="margin: 0">Canada Online Tutoring</dd>
+<dt style="color: #787774">My role</dt>
+<dd style="margin: 0">Product lead, UX researcher and UI designer</dd>
+<dt style="color: #787774">Timeline</dt>
+<dd style="margin: 0">6 weeks</dd>
+<dt style="color: #787774">Segment</dt>
+<dd style="margin: 0">Parents and adult learners: the people who book and pay</dd>
+<dt style="color: #787774">Tested with</dt>
+<dd style="margin: 0">10 families</dd>
+<dt style="color: #787774">North star</dt>
+<dd style="margin: 0">Credit repurchase rate</dd>
+<dt style="color: #787774">Stack</dt>
+<dd style="margin: 0">Figma, Notion</dd>
+<dt style="color: #787774">Links</dt>
+<dd style="margin: 0"><a href="https://www.figma.com/design/Z7V7KDjQZ8uckeAFkSHxVS/Canada-Online-Tutoring--Project-File?node-id=2499-2">Figma file</a></dd>
+</dl>
+<div style="padding: 20px 24px; border-radius: 6px; background: #EBF0FD; border-left: 3px solid #3360E5; margin: 0 0 16px">
+<div style="font-size: 12px; font-weight: 600; color: #2A50C4; margin-bottom: 6px">Outcome</div>
+<div style="font-size: 16px; line-height: 26px">Handed off in six weeks after testing with 10 families. 100% of new users found and changed their sessions without getting stuck, and families confidently chose larger packages and booked ahead.</div>
+</div>
+<h2>1. The problem and who had it</h2>
+<p><strong>A tutoring model that worked had stopped scaling.</strong> Booking, rescheduling, cancelling and paying all ran through emails and phone calls.</p>
+<ul>
+<li><strong>Parents and students</strong> hit friction every time plans changed, and scattered payment details created mistrust.</li>
+<li><strong>The business</strong> couldn't grow without adding admin staff and had no visibility into retention.</li>
+</ul>
+<p><strong>The core tension:</strong> modernize without breaking what worked. The tutoring philosophy was why families stayed, so the product had to extend it, not replace it.</p>
+<h2>2. Segment and business case</h2>
+<p><strong>The app served two users: the person who learns and the person who pays. I prioritized the payer.</strong> For younger students that's the parent; for adult learners it's themselves. Payers choose the tutor and judge whether it's working.</p>
+<ul>
+<li><strong>"I need to know exactly who is teaching my child."</strong> Credentials decide who gets hired, so detailed tutor profiles became a conversion feature.</li>
+<li><strong>"I need a tutor, but I also have a deadline."</strong> Families arrive with a goal and an end date, so tutoring can be sold as a plan.</li>
+</ul>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Who benefits from prepaid credits</th><th>How</th></tr></thead>
+<tbody>
+<tr><td style="font-weight: 500">The business</td><td>Revenue captured earlier, recurring purchases, efficient tutor scheduling</td></tr>
+<tr><td style="font-weight: 500">Parents</td><td>Simple payment, easy rescheduling, a discount for committing</td></tr>
+<tr><td style="font-weight: 500">Students</td><td>More consistent sessions, which is what improves results</td></tr>
+</tbody>
+</table>
+</div>
+<h2>3. The decisions: what I chose and what I cut</h2>
+<p><strong>The biggest call: credits are the core of the experience, not a payment screen bolted on at the end.</strong></p>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Decision</th><th>I chose</th><th>Over</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td style="font-weight: 500">Payment model</td><td>Prepaid credit packages</td><td>Pay per session</td><td>Earlier revenue and commitment that improves outcomes</td></tr>
+<tr><td style="font-weight: 500">App structure</td><td>One app, role-based onboarding</td><td>Separate apps</td><td>One platform to build; the right journey from day one</td></tr>
+<tr><td style="font-weight: 500">Build for first</td><td>Payers</td><td>Students</td><td>Revenue and trust run through whoever pays</td></tr>
+<tr><td style="font-weight: 500">Booking</td><td>Plans around a goal and end date</td><td>One session at a time</td><td>Matches how families think; sells sessions up front</td></tr>
+</tbody>
+</table>
+</div>
+<h3>What I cut from the MVP</h3>
+<ul>
+<li><strong>Video tutoring in the app.</strong> Sessions already ran on existing video tools.</li>
+<li><strong>A native calendar.</strong> The booking flow handles scheduling.</li>
+<li><strong>Native payment processing.</strong> A third-party provider is faster and safer.</li>
+<li><strong>Separate parent and student interfaces.</strong> Role is captured at sign-up so v2 can split them without rework.</li>
+</ul>
+<h2>4. How I prioritized, and where we disagreed</h2>
+<p><strong>Research produced six user needs; the MVP shipped the first two,</strong> checked against the client's must-haves: onboarding, dashboard, pricing and payment, booking and events.</p>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Rank</th><th>User need</th><th>MVP?</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Book, reschedule and pay without friction</td><td>Yes</td></tr>
+<tr><td>2</td><td>Find a tutor who fits my goals</td><td>Yes</td></tr>
+<tr><td>3</td><td>Engaging learning and visible progress</td><td style="color: #787774">Deferred</td></tr>
+<tr><td>4</td><td>Tutors showcase results and earn trust</td><td>Partly</td></tr>
+<tr><td>5</td><td>Learner and parent tools in one app</td><td>Partly</td></tr>
+<tr><td>6</td><td>Connect students with each other</td><td style="color: #787774">Later</td></tr>
+</tbody>
+</table>
+</div>
+<div style="display: flex; gap: 12px; padding: 16px 20px; border-radius: 6px; background: #F7F7F5; margin: 0 0 8px">
+<span aria-hidden="true" style="font-size: 20px; line-height: 26px">⚖️</span>
+<div style="font-size: 16px; line-height: 26px"><strong>The disagreement: gamification.</strong> I pushed for streaks and badges, which scored well with students. The client prioritized the core path to booking and paying. We deferred gamification and moved progress tracking to v2, where it serves students and parents alike.</div>
+</div>
+<h2>5. How I designed it</h2>
+<p>I took the project from market research and interviews through lo-fi to hi-fi design and an interactive prototype, iterating with the client's executives.</p>
+<figure style="margin: 24px 0">
+<img alt="Six C.O.T screens: home, booking, payment, purchase confirmation, learning events and COT Bot" src="/images/screens/cot-screens.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/>
+<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">The top row is the core path: home to a booked, paid session in four screens.</figcaption>
+</figure>
+<h2>6. Outcome and how I measure success</h2>
+<ul>
+<li><strong>100% task success on managing sessions.</strong> Every new user found and changed their session without getting stuck.</li>
+<li><strong>Families spent more and booked ahead,</strong> the behavior the recurring-revenue model depends on.</li>
+</ul>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Stage</th><th>Metric</th><th>Signal</th></tr></thead>
+<tbody>
+<tr><td style="font-weight: 500">Activate</td><td>First session booked</td><td>Real</td></tr>
+<tr><td style="font-weight: 500">Commit</td><td>First credit package bought</td><td>Real</td></tr>
+<tr><td style="font-weight: 500">Engage</td><td>Sessions used on schedule</td><td>Real</td></tr>
+<tr style="background: #EBF0FD"><td style="font-weight: 600">Renew</td><td style="font-weight: 600">Second package bought</td><td style="font-weight: 600; color: #2A50C4">North star</td></tr>
+</tbody>
+</table>
+</div>
+<h2>7. Growth plan and roadmap</h2>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Phase</th><th>What ships</th><th>Gate</th></tr></thead>
+<tbody>
+<tr><td style="font-weight: 500">MVP</td><td>Onboarding, tutor discovery, goal-based booking, credits, dashboard</td><td>Families booking in-app</td></tr>
+<tr><td style="font-weight: 500">v2</td><td>Separate parent and student views, progress tracking, renewal reminders</td><td>Repeat purchases</td></tr>
+<tr><td style="font-weight: 500">v3</td><td>Referrals, tutor tools, group sessions</td><td>Retention holds with new families</td></tr>
+</tbody>
+</table>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 64px; padding-top: 20px; border-top: 1px solid #E9E9E7; font-size: 14px">
+<a href="/work/prepare" style="color: #787774">← 🌦️ Prepare</a>
+<a href="/work/just-hair" style="font-weight: 500">Next: 💇🏾‍♀️ Just Hair →</a>
+</div>
+</article>

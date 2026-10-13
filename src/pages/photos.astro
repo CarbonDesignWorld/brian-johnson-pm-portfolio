@@ -1,0 +1,26 @@
+---
+import Shell from '../layouts/Shell.astro';
+import { PLACES } from '../data/site.js';
+---
+<Shell path="/photos" crumbs={[{ label: 'Home', emoji: '👋', href: '/' }, { label: 'Photos', emoji: '📷' }]}
+  description="Photos from places Brian Johnson has lived and traveled: New York City, Bali, Thailand and Las Vegas.">
+  <div style="width: 100%; max-width: 1128px; margin: 0 auto; padding: 64px 24px 96px; box-sizing: border-box">
+    <div aria-hidden="true" style="font-size: 56px; line-height: 1">📷</div>
+    <h1 style="margin: 16px 0 8px; font-size: 40px; line-height: 48px; font-weight: 700; letter-spacing: -0.01em">Photos</h1>
+    <p style="margin: 0 0 40px; font-size: 16px; line-height: 26px; color: #5F5E5B; max-width: 680px">Places I've lived and traveled.</p>
+    {PLACES.map((pl) => (
+      <section style="margin: 0 0 48px">
+        <div style="display: flex; align-items: baseline; gap: 10px; margin: 0 0 6px">
+          <h2 style="margin: 0; font-size: 24px; line-height: 32px; font-weight: 600">{pl.emoji} {pl.name}</h2>
+          <span style="font-size: 13px; color: #787774">{pl.photos.length} photos</span>
+        </div>
+        <p style="margin: 0 0 16px; font-size: 15px; line-height: 24px; color: #5F5E5B; max-width: 720px">{pl.caption}</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px">
+          {pl.photos.map(([file, alt]) => (
+            <img src={`/images/photos/${file}`} alt={alt} loading="lazy" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; display: block; background: #F6F6FB" />
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Shell>

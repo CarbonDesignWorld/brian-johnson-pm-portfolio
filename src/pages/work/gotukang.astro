@@ -1,0 +1,7 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import html from '../../fragments/gotukang.html?raw';
+---
+<Shell path="/work/gotukang" crumbs={[{label:'Home',emoji:'👋',href:'/'},{label:'Work',emoji:'🗂️',href:'/work'},{label:'GoTukang',emoji:'🔧'}]} description="GoTukang: a handyman marketplace concept inside Gojek. A product case study by Brian Johnson.">
+  <Fragment set:html={html} />
+</Shell>

@@ -1,0 +1,80 @@
+---
+import Shell from '../layouts/Shell.astro';
+import { PROJECTS } from '../data/site.js';
+const th = 'padding: 10px 12px; font-size: 11px; font-weight: 500; color: #787774; border-bottom: 1px solid #E9E9E7';
+const td = 'padding: 14px 12px; border-bottom: 1px solid #E9E9E7';
+---
+<Shell path="/work" crumbs={[{ label: 'Home', emoji: '👋', href: '/' }, { label: 'Work', emoji: '🗂️' }]}
+  description="Four software products, from concept to shipped: Prepare, C.O.T, Just Hair and GoTukang.">
+  <div id="work" data-view="gallery" style="width: 100%; max-width: 1128px; margin: 0 auto; padding: 64px 24px 96px; box-sizing: border-box">
+    <div aria-hidden="true" style="font-size: 56px; line-height: 1">🗂️</div>
+    <h1 style="margin: 16px 0 8px; font-size: 40px; line-height: 48px; font-weight: 700; letter-spacing: -0.01em">Work</h1>
+    <p style="margin: 0 0 32px; font-size: 16px; line-height: 26px; color: #5F5E5B; max-width: 680px">Four software products, from concept to shipped. Each case study leads with the problem, the segment and the decision, then shows the design that delivered it.</p>
+
+    <div role="group" aria-label="View" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px; padding-bottom: 8px; border-bottom: 1px solid #E9E9E7; margin-bottom: 24px">
+      <button class="tab view-tab" type="button" data-view-btn="gallery" aria-pressed="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"></rect></svg>
+        Gallery
+      </button>
+      <button class="tab view-tab" type="button" data-view-btn="table" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="1.5"></rect><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10"></path></svg>
+        Table
+      </button>
+      <span style="margin-left: auto; font-size: 12px; color: #787774">{PROJECTS.length} products</span>
+    </div>
+
+    <div class="gallery-view" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px">
+      {PROJECTS.map((p) => (
+        <a class="card" href={p.href}>
+          <img src={p.cover} alt={p.alt} loading="lazy" style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; background: #F7F7F5" />
+          <div style="padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 10px">
+            <div style="font-weight: 600; font-size: 18px">{p.emoji} {p.name}</div>
+            <div style="font-size: 14px; line-height: 20px; color: #787774">{p.blurb}</div>
+            <div style="display: flex; gap: 6px; flex-wrap: wrap">
+              <span style={`font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 4px; background: ${p.tag.bg}; color: ${p.tag.fg}`}>{p.status}</span>
+              <span style="font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 4px; background: #EFEFED; color: #5F5E5B">{p.type}</span>
+            </div>
+            <div style="display: flex; gap: 8px; align-items: baseline; padding-top: 10px; border-top: 1px solid #E9E9E7; font-size: 13px">
+              <span style="font-size: 11px; color: #787774; flex: 0 0 auto">Result</span>
+              <span style="color: #37352F">{p.result}</span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div class="table-view" style="overflow-x: auto">
+      <table style="width: 100%; min-width: 860px; border-collapse: collapse; font-size: 14px">
+        <thead>
+          <tr style="text-align: left">
+            <th style={th.replace('padding: 10px 12px', 'padding: 10px 12px 10px 0')}>Name</th>
+            <th style={th}>Status</th><th style={th}>Type</th><th style={th}>Segment</th><th style={th}>Result</th>
+            <th style={th.replace('padding: 10px 12px', 'padding: 10px 0 10px 12px')}>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          {PROJECTS.map((p) => (
+            <tr>
+              <td style={`${td}; padding-left: 0; white-space: nowrap`}><a class="row-link" href={p.href}>{p.emoji} {p.name}</a></td>
+              <td style={td}><span style={`font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 4px; background: ${p.tag.bg}; color: ${p.tag.fg}; white-space: nowrap`}>{p.status}</span></td>
+              <td style={`${td}; color: #5F5E5B`}>{p.type}</td>
+              <td style={`${td}; color: #5F5E5B`}>{p.segment}</td>
+              <td style={td}>{p.result}</td>
+              <td style={`${td}; padding-right: 0; font-size: 12px; color: #787774`}>{p.year}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script>
+    const root = document.getElementById('work')!;
+    const set = (v: string) => {
+      root.dataset.view = v;
+      root.querySelectorAll<HTMLButtonElement>('[data-view-btn]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.viewBtn === v)));
+      try { localStorage.setItem('bj:work-view', v); } catch {}
+    };
+    root.querySelectorAll<HTMLButtonElement>('[data-view-btn]').forEach((b) => b.addEventListener('click', () => set(b.dataset.viewBtn!)));
+    try { const v = localStorage.getItem('bj:work-view'); if (v === 'table') set('table'); } catch {}
+  </script>
+</Shell>

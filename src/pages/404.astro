@@ -1,0 +1,14 @@
+---
+import Shell from '../layouts/Shell.astro';
+---
+<Shell path="/404" crumbs={[{ label: 'Page not found', emoji: '🧭' }]}>
+  <div style="width: 100%; max-width: 768px; margin: 0 auto; padding: 64px 24px 96px; box-sizing: border-box">
+    <div aria-hidden="true" style="font-size: 56px; line-height: 1">🧭</div>
+    <h1 style="margin: 16px 0 8px; font-size: 40px; line-height: 48px; font-weight: 700">This page doesn't exist</h1>
+    <p style="margin: 0 0 24px; font-size: 16px; line-height: 26px; color: #5F5E5B">It may have moved when the site was rebuilt. Try search, or start from Work.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px">
+      <a class="btn-primary" href="/work">Go to Work</a>
+      <a class="ghost" href="#search" data-open="search">Search the site</a>
+    </div>
+  </div>
+</Shell>

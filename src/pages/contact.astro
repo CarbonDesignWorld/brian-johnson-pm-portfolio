@@ -1,0 +1,7 @@
+---
+import Shell from '../layouts/Shell.astro';
+import html from '../fragments/contact.html?raw';
+---
+<Shell path="/contact" crumbs={[{label:'Home',emoji:'👋',href:'/'},{label:'Contact',emoji:'✉️'}]}>
+  <Fragment set:html={html} />
+</Shell>

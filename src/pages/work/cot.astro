@@ -1,0 +1,7 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import html from '../../fragments/cot.html?raw';
+---
+<Shell path="/work/cot" crumbs={[{label:'Home',emoji:'👋',href:'/'},{label:'Work',emoji:'🗂️',href:'/work'},{label:'C.O.T',emoji:'🎓'}]} description="C.O.T: tutoring rebuilt around prepaid credits and recurring revenue. A product case study by Brian Johnson.">
+  <Fragment set:html={html} />
+</Shell>

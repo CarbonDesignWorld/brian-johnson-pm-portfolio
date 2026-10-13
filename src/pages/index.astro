@@ -1,0 +1,7 @@
+---
+import Shell from '../layouts/Shell.astro';
+import html from '../fragments/home.html?raw';
+---
+<Shell path="/">
+  <Fragment set:html={html} />
+</Shell>

@@ -1,0 +1,7 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import html from '../../fragments/prepare.html?raw';
+---
+<Shell path="/work/prepare" crumbs={[{label:'Home',emoji:'👋',href:'/'},{label:'Work',emoji:'🗂️',href:'/work'},{label:'Prepare',emoji:'🌦️'}]} description="Prepare: a weather app that tells you what to wear and pack. Shipped v0.1. A product case study by Brian Johnson.">
+  <Fragment set:html={html} />
+</Shell>

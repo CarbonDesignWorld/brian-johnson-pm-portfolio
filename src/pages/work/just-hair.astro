@@ -1,0 +1,7 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import html from '../../fragments/just-hair.html?raw';
+---
+<Shell path="/work/just-hair" crumbs={[{label:'Home',emoji:'👋',href:'/'},{label:'Work',emoji:'🗂️',href:'/work'},{label:'Just Hair',emoji:'💇🏾‍♀️'}]} description="Just Hair: an AI hair-care assistant for textured hair. A product case study by Brian Johnson.">
+  <Fragment set:html={html} />
+</Shell>

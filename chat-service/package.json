@@ -1,0 +1,15 @@
+{
+  "name": "brian-assistant",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "^9.3.1",
+    "@google/genai": "^2.29.1"
+  }
+}
