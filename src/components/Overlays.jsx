@@ -84,8 +84,8 @@ function InboxBadge() {
 /* ---------- Meetings ---------- */
 
 const LENGTHS = {
-  15: { label: '☕ Intro chat · 15 min', blurb: 'For recruiters and hiring managers checking fit.', link: SITE.calLink15, url: SITE.cal15 },
-  30: { label: '🧭 Product conversation · 30 min', blurb: 'A case study walkthrough or a role in detail.', link: SITE.calLink30, url: SITE.cal30 },
+  15: { label: '☕ Intro chat', length: '15 min', blurb: 'For recruiters and hiring managers checking fit.', link: SITE.calLink15, url: SITE.cal15 },
+  30: { label: '🧭 Product conversation', length: '30 min', blurb: 'A case study walkthrough or a role in detail.', link: SITE.calLink30, url: SITE.cal30 },
 };
 
 function loadCal() {
@@ -151,7 +151,8 @@ function Meetings({ len, setLen, onClose }) {
           <div role="group" aria-label="Meeting length" className="segs">
             {[15, 30].map((n) => (
               <button key={n} className={`seg${len === n ? ' seg-on' : ''}`} type="button" aria-pressed={len === n} onClick={() => setLen(n)}>
-                {LENGTHS[n].label}
+                <span className="seg-name">{LENGTHS[n].label}</span>
+                <span className="seg-len">{LENGTHS[n].length}</span>
               </button>
             ))}
           </div>
