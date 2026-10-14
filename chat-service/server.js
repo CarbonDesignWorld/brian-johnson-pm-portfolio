@@ -15,14 +15,14 @@ import { GoogleGenAI, Type } from '@google/genai';
 import { Firestore, FieldValue } from '@google-cloud/firestore';
 
 const PORT = Number(process.env.PORT || 8080);
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const MODEL = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
 const DAILY_LIMIT = Number(process.env.DAILY_LIMIT || 10);
 const IP_DAILY_LIMIT = Number(process.env.IP_DAILY_LIMIT || 40); // stops one person clearing storage to get more
 const CAP_USD = Number(process.env.MONTHLY_CAP_USD || 10);
 const CAP_SAFETY = 0.9; // pause at 90% of the cap so the last answers can't push it over
 // Prices per million tokens. Check Google's current Gemini pricing and set these.
-const PRICE_IN = Number(process.env.PRICE_IN_PER_M || 0.3);
-const PRICE_OUT = Number(process.env.PRICE_OUT_PER_M || 2.5);
+const PRICE_IN = Number(process.env.PRICE_IN_PER_M || 0.5);
+const PRICE_OUT = Number(process.env.PRICE_OUT_PER_M || 3);
 const ALLOWED = (process.env.ALLOWED_ORIGINS || 'https://brianjohnson.work,https://www.brianjohnson.work')
   .split(',').map((s) => s.trim()).filter(Boolean);
 const SALT = process.env.HASH_SALT || 'change-me';
