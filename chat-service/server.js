@@ -146,7 +146,8 @@ async function handleChat(req, res, origin) {
         responseMimeType: 'application/json',
         responseSchema: SCHEMA,
         temperature: 0.3,
-        maxOutputTokens: 600,
+        // Room for the model's thinking plus a ~120-word answer; 600 cut answers off mid-JSON.
+        maxOutputTokens: 4096,
       },
     });
     out = JSON.parse(result.text);
