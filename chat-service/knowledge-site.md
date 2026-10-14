@@ -10,7 +10,7 @@ This is everything the assistant may use. It comes from brianjohnson.work. Anyth
 
 # Brian Johnson
 
-I take products from a customer problem to a working prototype. Ten years selling software taught me what customers will pay for; designing and building taught me how to ship it.
+I lead products from customer problem to shipped result: deciding what to build, what to cut and how to measure it. Four products so far, from research to launch or handoff.
 
 Focus
 
