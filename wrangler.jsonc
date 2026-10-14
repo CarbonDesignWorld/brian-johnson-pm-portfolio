@@ -2,6 +2,8 @@
 {
   "name": "brian-johnson-pm-portfolio",
   "compatibility_date": "2026-06-01",
+  // Lets non-production branches deploy to their own preview URL.
+  "previews": {},
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page",
