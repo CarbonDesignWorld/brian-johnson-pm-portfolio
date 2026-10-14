@@ -29,10 +29,10 @@ a:hover{color:#2A50C4;text-decoration:underline}
 .prose h2{margin:56px 0 16px;font-size:30px;line-height:38px;font-weight:600}
 .prose h3{margin:28px 0 12px;font-size:20px;line-height:28px;font-weight:600}
 .tbl-wrap{overflow-x:auto;margin:0 0 20px}
-.tbl{width:100%;min-width:600px;border-collapse:collapse;font-size:14px;line-height:20px}
-.tbl th{text-align:left;padding:10px 12px;font-size:12px;font-weight:500;color:#787774;border-bottom:1px solid #E9E9E7;border-top:1px solid #E9E9E7}
-.tbl td{padding:12px;border-bottom:1px solid #E9E9E7;vertical-align:top}
-.tbl td:first-child,.tbl th:first-child{padding-left:0}
+/* Tables match Notion's simple table: full grid, light header row */
+.tbl{width:100%;min-width:600px;border-collapse:collapse;font-size:14px;line-height:20px;border:1px solid #E9E9E7}
+.tbl th{text-align:left;padding:10px 12px;font-size:14px;font-weight:500;color:#37352F;background:#F7F6F3;border:1px solid #E9E9E7}
+.tbl td{padding:10px 12px;border:1px solid #E9E9E7;vertical-align:top}
 details.toggle{margin:0 0 16px;border-radius:6px}
 details.toggle summary{cursor:pointer;display:flex;align-items:center;gap:8px;min-height:40px;padding:0 8px;border-radius:6px;font-weight:600;font-size:16px;list-style:none}
 details.toggle summary::-webkit-details-marker{display:none}
