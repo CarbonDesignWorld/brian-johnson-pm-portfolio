@@ -46,7 +46,15 @@ img { max-width: 100%; }
 .badge[hidden] { display: none; }
 .nav-group { display: flex; flex-direction: column; gap: 1px; }
 .nav-label { font-size: 12px; font-weight: 500; color: var(--label); padding: 4px 8px; }
-.nav-kids { display: flex; flex-direction: column; gap: 1px; padding-left: 20px; }
+.nav-tree { display: flex; align-items: center; gap: 2px; }
+.nav-tree > .nav-item { flex: 1; min-width: 0; padding-left: 4px; }
+.nav-chev { flex: 0 0 auto; display: flex; align-items: center; justify-content: center; width: 20px; height: 24px; margin-left: 2px; border: 0; border-radius: 4px; background: none; color: var(--label); cursor: pointer; padding: 0; }
+.nav-chev:hover { background: var(--hover); color: var(--text); }
+.nav-chev svg { transition: transform 120ms ease-out; }
+.nav-tree[data-open="true"] .nav-chev svg { transform: rotate(90deg); }
+.nav-kids { display: flex; flex-direction: column; gap: 1px; padding-left: 40px; }
+.nav-kids ~ .nav-item { padding-left: 28px; }
+.nav-tree[data-open="false"] + .nav-kids { display: none; }
 .nav-on { background: var(--hover); color: var(--text) !important; font-weight: 600 !important; }
 .backdrop { display: none; }
 

@@ -81,8 +81,13 @@ const cur = (p: string) => (p === path ? { 'aria-current': 'page', class: 'nav-i
 
       <div class="nav-group">
         <div class="nav-label">Pages</div>
-        <a {...cur('/work')} href="/work"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"></rect></svg>Work</a>
-        <div class="nav-kids">
+        <div class="nav-tree" data-tree="work" data-open={path.startsWith('/work') ? 'true' : 'false'}>
+          <button class="nav-chev" type="button" aria-expanded={path.startsWith('/work') ? 'true' : 'false'} aria-controls="nav-work-kids" aria-label="Show or hide case studies">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"></path></svg>
+          </button>
+          <a {...cur('/work')} href="/work"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"></rect></svg>Work</a>
+        </div>
+        <div class="nav-kids" id="nav-work-kids">
           {workKids.map(([href, emoji, label]) => (
             <a {...cur(href)} href={href}><span aria-hidden="true">{emoji}</span>{label}</a>
           ))}
@@ -96,6 +101,23 @@ const cur = (p: string) => (p === path ? { 'aria-current': 'page', class: 'nav-i
       <a class="btn-outline" href="/contact" data-open="meetings"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"></rect><path d="M3.5 10h17M8 3v4M16 3v4"></path></svg>Book a meeting</a>
     </div>
   </nav>
+  <script is:inline>
+    (function () {
+      var t = document.querySelector('[data-tree="work"]');
+      if (!t) return;
+      var b = t.querySelector('.nav-chev');
+      var onWork = t.dataset.open === 'true';
+      var saved = null;
+      try { saved = localStorage.getItem('bj:nav-work'); } catch (e) {}
+      function set(open) { t.dataset.open = String(open); b.setAttribute('aria-expanded', String(open)); }
+      if (saved !== null && !onWork) set(saved === 'open');
+      b.addEventListener('click', function () {
+        var open = t.dataset.open !== 'true';
+        set(open);
+        try { localStorage.setItem('bj:nav-work', open ? 'open' : 'closed'); } catch (e) {}
+      });
+    })();
+  </script>
   <label for="drawer" class="backdrop" aria-hidden="true"></label>
 
   <main class="main">
