@@ -23,18 +23,22 @@ gcloud services enable run.googleapis.com cloudbuild.googleapis.com artifactregi
 # A Firestore database for counters and logs (skip if the project already has one)
 gcloud firestore databases create --location=nam5
 
-# Store your Gemini API key (from Google AI Studio) as a secret
+# Store your Gemini API key (from Google AI Studio) as a secret.
+# The AI Studio project needs billing and prepaid credits, or Gemini returns 402.
 printf "PASTE_YOUR_GEMINI_KEY" | gcloud secrets create gemini-api-key --data-file=-
 
 # Deploy
 gcloud run deploy brian-assistant --source . --region us-east4 \
   --allow-unauthenticated --max-instances 2 --memory 512Mi \
   --set-secrets GEMINI_API_KEY=gemini-api-key:latest \
-  --set-env-vars "HASH_SALT=$(openssl rand -hex 16),ALLOWED_ORIGINS=https://brianjohnson.work,https://www.brianjohnson.work"
+  --set-env-vars "^;^HASH_SALT=$(openssl rand -hex 16);ALLOWED_ORIGINS=https://brianjohnson.work,https://www.brianjohnson.work"
 
 # Let old daily counters delete themselves after two days
 gcloud firestore fields ttls update expires --collection-group=limits --enable-ttl
 ```
+
+The `^;^` at the start of `--set-env-vars` makes `;` the separator, so the comma inside
+`ALLOWED_ORIGINS` stays part of its value.
 
 The deploy prints a URL like `https://brian-assistant-xxxxx.us-east4.run.app`. Put it in the website's
 hosting settings as the environment variable `PUBLIC_CHAT_API`, then redeploy the site.
@@ -49,11 +53,11 @@ service's own counter is what actually stops spending.
 
 | Variable | Default | What it does |
 | --- | --- | --- |
-| `GEMINI_MODEL` | `gemini-2.5-flash` | Which Gemini model answers |
+| `GEMINI_MODEL` | `gemini-3.8-flash` | Which Gemini model answers |
 | `DAILY_LIMIT` | `10` | Questions per visitor per day |
 | `IP_DAILY_LIMIT` | `40` | Questions per network per day |
 | `MONTHLY_CAP_USD` | `10` | Monthly spend cap; the service pauses at 90% |
-| `PRICE_IN_PER_M` / `PRICE_OUT_PER_M` | `0.3` / `2.5` | Gemini price per million input/output tokens. Check Google's current pricing for your model and update these |
+| `PRICE_IN_PER_M` / `PRICE_OUT_PER_M` | `0.5` / `3` | Gemini price per million input/output tokens, set a little above the published rate (about $0.375 / $1.875 for 3.8 Flash in Oct 2026) so the cap trips early. Check Google's current pricing when you change models |
 | `ALLOWED_ORIGINS` | the two brianjohnson.work addresses | Websites allowed to call the service. Add your preview address while testing |
 | `HASH_SALT` | — | Random text used to hash visitor ids and IPs. Set once, keep secret |
 
