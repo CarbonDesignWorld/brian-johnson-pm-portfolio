@@ -168,13 +168,25 @@ const cur = (p: string) => (p === path ? { 'aria-current': 'page', class: 'nav-i
     }
     const hist = t.closest('[data-history]') as HTMLElement | null;
     if (hist) history[hist.dataset.history === 'back' ? 'back' : 'forward']();
+    const toast = (msg: string) => {
+      const el = document.querySelector('.toast') as HTMLElement;
+      el.textContent = msg;
+      el.hidden = false;
+      setTimeout(() => (el.hidden = true), 1800);
+    };
     if (t.closest('[data-copy-link]')) {
-      navigator.clipboard?.writeText(location.href).then(() => {
-        const toast = document.querySelector('.toast') as HTMLElement;
-        toast.textContent = 'Link copied';
-        toast.hidden = false;
-        setTimeout(() => (toast.hidden = true), 1600);
-      });
+      navigator.clipboard?.writeText(location.href).then(() => toast('Link copied'));
+    }
+    // Email links copy the address instead of opening a mail app.
+    // If copying isn't allowed, the link falls back to opening the mail app.
+    const mail = t.closest('a[href^="mailto:"]') as HTMLAnchorElement | null;
+    if (mail && navigator.clipboard) {
+      e.preventDefault();
+      const address = mail.getAttribute('href')!.replace('mailto:', '').split('?')[0];
+      navigator.clipboard.writeText(address).then(
+        () => toast(`Copied ${address}`),
+        () => (window.location.href = mail.href)
+      );
     }
   });
   // Keyboard access for the menu button (it is a label for the drawer checkbox).
