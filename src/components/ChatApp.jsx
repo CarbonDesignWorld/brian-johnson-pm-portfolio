@@ -20,7 +20,7 @@ const STARTERS = [
   },
   {
     key: 'tradeoffs', icon: '⚖️', label: 'How he makes trade-offs', q: 'How does Brian make trade-offs?',
-    a: 'He ranks user needs, checks them against business goals, and cuts whatever doesn’t serve the core loop.\n\nAt GoTukang he chose bidding over instant booking to give tukangs control and attract supply, accepting slower booking for customers. He also cut in-app payment because the trades still run on cash, delaying commission revenue on purpose.',
+    a: 'He ranks user needs, checks them against business goals, and cuts whatever doesn’t serve the core loop.\n\nAt GoTukang he chose invite-and-propose over instant booking: business owners invite several tukangs to a job and each proposes, which gives tukangs control and attracts supply, at the cost of a slower match. He also cut in-app payment because the trades still run on cash, delaying commission revenue on purpose.',
     sources: [{ title: 'GoTukang case study', href: '/work/gotukang' }],
   },
   {

@@ -45,17 +45,17 @@ export const PROJECTS = [
   {
     slug: 'cot', emoji: '🎓', name: 'C.O.T', href: '/work/cot', cover: '/images/covers/cot.jpg', alt: 'C.O.T app on a phone',
     blurb: 'A phone-and-email tutoring business rebuilt as an app with prepaid credits and recurring revenue.',
-    status: 'MVP', type: 'Client · EdTech', segment: 'Parents and adult learners', result: '100% of testers managed sessions unassisted', year: '2025',
+    status: 'MVP', type: 'Client · EdTech', segment: 'Students and adult learners', result: '100% of testers managed sessions unassisted', year: '2025',
   },
   {
     slug: 'just-hair', emoji: '💇🏾‍♀️', name: 'Just Hair', href: '/work/just-hair', cover: '/images/covers/just-hair.jpg', alt: 'Just Hair app on a phone',
     blurb: 'An AI hair-care assistant for textured hair that explains every recommendation before it automates.',
-    status: 'MVP', type: 'Consumer AI', segment: 'Women with textured hair', result: 'Prototype tested by all 4 interviewees', year: '2025',
+    status: 'MVP', type: 'Consumer AI', segment: 'Women with textured hair', result: '85% task success in unmoderated testing', year: '2025',
   },
   {
     slug: 'gotukang', emoji: '🔧', name: 'GoTukang', href: '/work/gotukang', cover: '/images/covers/gotukang.jpg', alt: 'GoTukang on a phone',
     blurb: 'A concept for a handyman marketplace inside Gojek, built on trust signals instead of word of mouth.',
-    status: 'Concept', type: 'Marketplace · Feature add', segment: 'Small businesses in Indonesia', result: '3 interviews and a 4-market analysis', year: '2025',
+    status: 'Concept', type: 'Marketplace · Feature add', segment: 'Small business and property owners in Bali', result: '100% task success in Maze testing', year: '2025',
   },
 ].map((p) => ({ ...p, tag: TAG[p.status] }));
 
@@ -138,9 +138,9 @@ export const INBOX = [
 // Search index: what the search box can find.
 export const SEARCH = [
   { g: 'Case studies', emoji: '🌦️', title: 'Prepare', snippet: 'Shipped · a weather app that tells you what to wear and pack', href: '/work/prepare', k: 'prepare weather ai gemini rules engine shipped consumer pack outfit open-meteo' },
-  { g: 'Case studies', emoji: '🎓', title: 'C.O.T', snippet: 'MVP · tutoring rebuilt around prepaid credits', href: '/work/cot', k: 'cot canada online tutoring credits edtech client mvp parents booking gamification' },
+  { g: 'Case studies', emoji: '🎓', title: 'C.O.T', snippet: 'MVP · tutoring rebuilt around prepaid credits', href: '/work/cot', k: 'cot online tutoring credits edtech client mvp parents booking gamification' },
   { g: 'Case studies', emoji: '💇🏾‍♀️', title: 'Just Hair', snippet: 'MVP · AI hair care that explains before it recommends', href: '/work/just-hair', k: 'just hair ai textured research llm multimodal women routine' },
-  { g: 'Case studies', emoji: '🔧', title: 'GoTukang', snippet: 'Concept · a handyman marketplace inside Gojek', href: '/work/gotukang', k: 'gotukang gojek marketplace handyman tukang indonesia concept bidding commission' },
+  { g: 'Case studies', emoji: '🔧', title: 'GoTukang', snippet: 'Concept · a handyman marketplace inside Gojek', href: '/work/gotukang', k: 'gotukang gojek marketplace handyman tukang indonesia concept invite proposals commission' },
   { g: 'Pages', emoji: '👋', title: 'Home', snippet: 'About Brian, experience and selected work', href: '/', k: 'home about experience notion bravely bonusly autodesk carbon design world career' },
   { g: 'Pages', emoji: '🗂️', title: 'Work', snippet: 'All four products, gallery and table', href: '/work', k: 'work projects portfolio case studies' },
   { g: 'Pages', emoji: '✉️', title: 'Contact', snippet: 'Book a call, email, LinkedIn, GitHub, resume', href: '/contact', k: 'contact email resume linkedin github meeting book call' },

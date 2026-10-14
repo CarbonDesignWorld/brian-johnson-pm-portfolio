@@ -2,126 +2,218 @@
 <article class="prose" style="width: 100%; max-width: 768px; margin: 0 auto; padding: 0 24px 96px; box-sizing: border-box">
 <div aria-hidden="true" style="font-size: 72px; line-height: 1; margin-top: -40px">🎓</div>
 <h1 style="margin: 16px 0 8px; font-size: 40px; line-height: 48px; font-weight: 700; letter-spacing: -0.01em">C.O.T</h1>
-<p style="font-size: 18px; line-height: 28px; color: #5F5E5B">Canada Online Tutoring ran on phone calls and emails. I turned it into a mobile app with recurring revenue built in.</p>
+<p style="font-size: 18px; line-height: 28px; color: #5F5E5B">COT’s tutoring ran on intake forms and phone calls. We turned it into a self-serve app where learners sign up, get matched, book and prepay.</p>
 <dl style="display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 10px 16px; margin: 0 0 24px; padding: 16px 0; border-top: 1px solid #E9E9E7; border-bottom: 1px solid #E9E9E7; font-size: 14px; line-height: 20px">
 <dt style="color: #787774">Status</dt>
-<dd style="margin: 0"><span style="font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 4px; background: #D3E5EF; color: #183347">MVP, handed off</span></dd>
+<dd style="margin: 0"><span style="font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 4px; background: #D3E5EF; color: #183347">MVP, in development</span></dd>
 <dt style="color: #787774">Client</dt>
-<dd style="margin: 0">Canada Online Tutoring</dd>
+<dd style="margin: 0">COT, an online tutoring company (under NDA)</dd>
 <dt style="color: #787774">My role</dt>
-<dd style="margin: 0">Product lead, UX researcher and UI designer</dd>
+<dd style="margin: 0">UX research and product design; I owned payment and checkout</dd>
+<dt style="color: #787774">Team</dt>
+<dd style="margin: 0">Jr designer, Sr designer, the founder and COT’s engineering team</dd>
 <dt style="color: #787774">Timeline</dt>
 <dd style="margin: 0">6 weeks</dd>
 <dt style="color: #787774">Segment</dt>
-<dd style="margin: 0">Parents and adult learners: the people who book and pay</dd>
+<dd style="margin: 0">Learners: students and adult learners, with parents as the purchaser</dd>
 <dt style="color: #787774">Tested with</dt>
-<dd style="margin: 0">10 families</dd>
+<dd style="margin: 0">4 participants, 100% task success</dd>
 <dt style="color: #787774">North star</dt>
-<dd style="margin: 0">Credit repurchase rate</dd>
+<dd style="margin: 0">Prepaid sessions booked in the app without staff help, and completed, per week</dd>
 <dt style="color: #787774">Stack</dt>
 <dd style="margin: 0">Figma, Notion</dd>
-<dt style="color: #787774">Links</dt>
-<dd style="margin: 0"><a href="https://www.figma.com/design/Z7V7KDjQZ8uckeAFkSHxVS/Canada-Online-Tutoring--Project-File?node-id=2499-2">Figma file</a></dd>
 </dl>
 <div style="padding: 20px 24px; border-radius: 6px; background: #EBF0FD; border-left: 3px solid #3360E5; margin: 0 0 16px">
-<div style="font-size: 12px; font-weight: 600; color: #2A50C4; margin-bottom: 6px">Outcome</div>
-<div style="font-size: 16px; line-height: 26px">Handed off in six weeks after testing with 10 families. 100% of new users found and changed their sessions without getting stuck, and families confidently chose larger packages and booked ahead.</div>
+<div style="font-size: 12px; font-weight: 600; color: #2A50C4; margin-bottom: 6px">Result</div>
+<div style="font-size: 16px; line-height: 26px">I turned COT’s form-and-phone-call intake into a self-serve mobile flow, with one other designer, in a 6-week client engagement. We narrowed 25 feature ideas to an 8-feature MVP; the prototype reached 100% task success with 4 testers and is now in development with COT’s engineering team.</div>
 </div>
-<h2>1. The problem and who had it</h2>
-<p><strong>A tutoring model that worked had stopped scaling.</strong> Booking, rescheduling, cancelling and paying all ran through emails and phone calls.</p>
+<h2>1. Background</h2>
+<p>COT is an online tutoring company that connects students and adult learners with professional tutors. It had a working website but no mobile app, and every new customer still went through a manual intake. We delivered a five-flow, high-fidelity prototype with annotations, handed off for development.</p>
+<h2>2. Project overview</h2>
+<p><strong>Mission.</strong> COT gives students personalized one-on-one virtual tutoring from qualified educators, helping them build confidence and reach their academic potential.</p>
+<p><strong>The business problem.</strong> Before anyone could book, they filled in a form, waited for an internal review, then got on a live call. The founder said this was “leading to lost revenue from potential customers due to wait times,” and it tied staff time to every booking and reschedule. He wanted customers to book on their own, in an app built for actions, not reading.</p>
+<p><strong>Problem statement.</strong> Parents and adult learners struggle to find a tutor they trust who fits their goals, then hit friction scheduling, paying and communicating. The app had to cut the time from first contact to first booked session without losing the trust and tutor quality the manual process protected.</p>
+<h2>3. Ideation overview</h2>
+<p><strong>Stakeholders.</strong> Weekly reviews with the founder to agree scope and priorities, and alignment with his engineering team on what could ship. The founder’s must-haves set the guardrails: onboarding, a dashboard, pricing and payment, session booking and events.</p>
+<p><strong>Scope.</strong> We built on an earlier team’s research and added our own in week one:</p>
 <ul>
-<li><strong>Parents and students</strong> hit friction every time plans changed, and scattered payment details created mistrust.</li>
-<li><strong>The business</strong> couldn't grow without adding admin staff and had no visibility into retention.</li>
+<li>4 user interviews: a parent, a student, a teacher who tutors and a working professional upskilling</li>
+<li>4 competitor apps reviewed by signing up and walking their flows (Wyzant, Kadama, Varsity Tutors, Chegg)</li>
+<li>AI-assisted secondary research on the tutoring market, then affinity mapping into themes</li>
 </ul>
-<p><strong>The core tension:</strong> modernize without breaking what worked. The tutoring philosophy was why families stayed, so the product had to extend it, not replace it.</p>
-<h2>2. Segment and business case</h2>
-<p><strong>The app served two users: the person who learns and the person who pays. I prioritized the payer.</strong> For younger students that's the parent; for adult learners it's themselves. Payers choose the tutor and judge whether it's working.</p>
-<ul>
-<li><strong>"I need to know exactly who is teaching my child."</strong> Credentials decide who gets hired, so detailed tutor profiles became a conversion feature.</li>
-<li><strong>"I need a tutor, but I also have a deadline."</strong> Families arrive with a goal and an end date, so tutoring can be sold as a plan.</li>
-</ul>
+<p><strong>Target customer.</strong> Research produced four personas:</p>
 <div class="tbl-wrap">
 <table class="tbl">
-<thead><tr><th>Who benefits from prepaid credits</th><th>How</th></tr></thead>
+<thead><tr><th>Persona</th><th>Who they are</th><th>Key goal</th><th>Key frustration</th></tr></thead>
 <tbody>
-<tr><td style="font-weight: 500">The business</td><td>Revenue captured earlier, recurring purchases, efficient tutor scheduling</td></tr>
-<tr><td style="font-weight: 500">Parents</td><td>Simple payment, easy rescheduling, a discount for committing</td></tr>
-<tr><td style="font-weight: 500">Students</td><td>More consistent sessions, which is what improves results</td></tr>
+<tr><td style="font-weight: 500">Mia</td><td>Teen student</td><td>Fun learning and visible progress</td><td>Boredom, low motivation</td></tr>
+<tr><td style="font-weight: 500">Jordan</td><td>Adult learner upskilling for work</td><td>Efficient learning on a flexible schedule</td><td>Hard to find the right tutor; manual scheduling</td></tr>
+<tr><td style="font-weight: 500">David</td><td>Parent and decision-maker</td><td>Transparency, convenience, a tutor he trusts</td><td>Confusing scheduling; unclear progress</td></tr>
+<tr><td style="font-weight: 500">Sophia</td><td>Tutor</td><td>Professional growth, client retention</td><td>Fragmented tools, little visibility</td></tr>
 </tbody>
 </table>
 </div>
-<h2>3. The decisions: what I chose and what I cut</h2>
-<p><strong>The biggest call: credits are the core of the experience, not a payment screen bolted on at the end.</strong></p>
-<div class="tbl-wrap">
-<table class="tbl">
-<thead><tr><th>Decision</th><th>I chose</th><th>Over</th><th>Why</th></tr></thead>
-<tbody>
-<tr><td style="font-weight: 500">Payment model</td><td>Prepaid credit packages</td><td>Pay per session</td><td>Earlier revenue and commitment that improves outcomes</td></tr>
-<tr><td style="font-weight: 500">App structure</td><td>One app, role-based onboarding</td><td>Separate apps</td><td>One platform to build; the right journey from day one</td></tr>
-<tr><td style="font-weight: 500">Build for first</td><td>Payers</td><td>Students</td><td>Revenue and trust run through whoever pays</td></tr>
-<tr><td style="font-weight: 500">Booking</td><td>Plans around a goal and end date</td><td>One session at a time</td><td>Matches how families think; sells sessions up front</td></tr>
-</tbody>
-</table>
-</div>
-<h3>What I cut from the MVP</h3>
-<ul>
-<li><strong>Video tutoring in the app.</strong> Sessions already ran on existing video tools.</li>
-<li><strong>A native calendar.</strong> The booking flow handles scheduling.</li>
-<li><strong>Native payment processing.</strong> A third-party provider is faster and safer.</li>
-<li><strong>Separate parent and student interfaces.</strong> Role is captured at sign-up so v2 can split them without rework.</li>
-</ul>
-<h2>4. How I prioritized, and where we disagreed</h2>
-<p><strong>Research produced six user needs; the MVP shipped the first two,</strong> checked against the client's must-haves: onboarding, dashboard, pricing and payment, booking and events.</p>
-<div class="tbl-wrap">
-<table class="tbl">
-<thead><tr><th>Rank</th><th>User need</th><th>MVP?</th></tr></thead>
-<tbody>
-<tr><td>1</td><td>Book, reschedule and pay without friction</td><td>Yes</td></tr>
-<tr><td>2</td><td>Find a tutor who fits my goals</td><td>Yes</td></tr>
-<tr><td>3</td><td>Engaging learning and visible progress</td><td style="color: #787774">Deferred</td></tr>
-<tr><td>4</td><td>Tutors showcase results and earn trust</td><td>Partly</td></tr>
-<tr><td>5</td><td>Learner and parent tools in one app</td><td>Partly</td></tr>
-<tr><td>6</td><td>Connect students with each other</td><td style="color: #787774">Later</td></tr>
-</tbody>
-</table>
-</div>
-<div style="display: flex; gap: 12px; padding: 16px 20px; border-radius: 6px; background: #F7F7F5; margin: 0 0 8px">
-<span aria-hidden="true" style="font-size: 20px; line-height: 26px">⚖️</span>
-<div style="font-size: 16px; line-height: 26px"><strong>The disagreement: gamification.</strong> I pushed for streaks and badges, which scored well with students. The client prioritized the core path to booking and paying. We deferred gamification and moved progress tracking to v2, where it serves students and parents alike.</div>
-</div>
-<h2>5. How I designed it</h2>
-<p>I took the project from market research and interviews through lo-fi to hi-fi design and an interactive prototype, iterating with the client's executives.</p>
 <figure style="margin: 24px 0">
-<img alt="Six C.O.T screens: home, booking, payment, purchase confirmation, learning events and COT Bot" src="/images/screens/cot-screens.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/>
-<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">The top row is the core path: home to a booked, paid session in four screens.</figcaption>
+<a href="/images/personas/cot-jordan.jpg" target="_blank" rel="noopener"><img alt="Persona board: Jordan Lee, 28, adult learner" src="/images/personas/cot-jordan.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/></a>
+<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">Jordan, an adult learner: part of the target segment, books and pays for himself.</figcaption>
 </figure>
-<h2>6. Outcome and how I measure success</h2>
+<figure style="margin: 24px 0">
+<a href="/images/personas/cot-mia.jpg" target="_blank" rel="noopener"><img alt="Persona board: Mia Chen, 16, high school student" src="/images/personas/cot-mia.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/></a>
+<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">Mia, a student learner: part of the target segment.</figcaption>
+</figure>
+<figure style="margin: 24px 0">
+<a href="/images/personas/cot-david.jpg" target="_blank" rel="noopener"><img alt="Persona board: David Rivera, 42, parent" src="/images/personas/cot-david.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/></a>
+<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">David, a parent: the purchaser, which shaped the checkout.</figcaption>
+</figure>
+<h2>4. Customer segmentation</h2>
+<p><strong>We prioritized learners: the students and adult learners who take the sessions.</strong> Parents stay in the picture as the purchaser.</p>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Segment</th><th>Impact</th><th>Urgency</th><th>Size of market</th><th>Total</th></tr></thead>
+<tbody>
+<tr style="background: #EBF0FD"><td style="font-weight: 600">Learners: students and adult learners</td><td>4</td><td>5</td><td>4</td><td><strong>13</strong></td></tr>
+<tr><td style="font-weight: 500">Tutors</td><td>3</td><td>3</td><td>3</td><td>9</td></tr>
+<tr><td style="font-weight: 500">Parents (as purchasers)</td><td>3</td><td>2</td><td>3</td><td>8</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size: 13px; line-height: 20px; color: #787774; margin-top: -4px">Scored 1–5, retrospectively from research findings.</p>
+<p>Learners feel the pain at every session and are most of the user base, so they shape the core flow: match, book, attend. Parents mostly enter at one moment, when they pay. That split shaped the MVP: matching and booking are built around the learner, and the checkout I owned is built for whoever holds the card. Tutors mattered for trust, so they appear through profile cards rather than a tutor-side app.</p>
+<h2>5. Customer pain point</h2>
+<p><strong>We prioritized finding a tutor who fits, just ahead of booking and payment friction.</strong></p>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Pain point</th><th>Impact</th><th>Urgency</th><th>Size</th><th>Total</th></tr></thead>
+<tbody>
+<tr style="background: #EBF0FD"><td style="font-weight: 600">Finding a tutor who fits my goals and learning style</td><td>5</td><td>5</td><td>4</td><td><strong>14</strong></td></tr>
+<tr><td style="font-weight: 500">Booking, rescheduling and paying without friction</td><td>5</td><td>5</td><td>3</td><td>13</td></tr>
+<tr><td style="font-weight: 500">Engaging learning with visible progress</td><td>4</td><td>5</td><td>3</td><td>12</td></tr>
+<tr><td style="font-weight: 500">Trusting tutor credibility</td><td>4</td><td>5</td><td>3</td><td>12</td></tr>
+<tr><td style="font-weight: 500">Separate learner and parent/admin views</td><td>3</td><td>2</td><td>2</td><td>7</td></tr>
+<tr><td style="font-weight: 500">Connecting with peer learners</td><td>2</td><td>2</td><td>1</td><td>5</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size: 13px; line-height: 20px; color: #787774; margin-top: -4px">Scored 1–5, retrospectively from research findings.</p>
+<p>Booking friction was the pain the founder felt most, and interviews backed it up: one parent had to phone in just to move a session, and when a tutor cancelled, her next session slipped a full week. But scoring changed the order. A smooth booking flow is worthless if the learner doesn’t trust the match, so matching came first, and booking and checkout followed from it.</p>
+<h2>6. Prioritized solution</h2>
+<p><strong>We chose a matching questionnaire that leads straight to top-matched tutors and booking:</strong> the buildable first version of smart matching.</p>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Proposed solution</th><th>Ease (5 = easy)</th><th>Eng. effort (5 = easy)</th><th>Effectiveness</th><th>Total</th></tr></thead>
+<tbody>
+<tr style="background: #EBF0FD"><td style="font-weight: 600">Matching questionnaire → top-matched tutors → book or exit</td><td>4</td><td>3</td><td>5</td><td><strong>12</strong></td></tr>
+<tr><td style="font-weight: 500">Search and filter tutors by subject</td><td>4</td><td>4</td><td>3</td><td>11</td></tr>
+<tr><td style="font-weight: 500">Tutor profile cards with ratings and reviews</td><td>3</td><td>3</td><td>4</td><td>10</td></tr>
+<tr><td style="font-weight: 500">Personalized learning path and progress bar</td><td>2</td><td>1</td><td>4</td><td>7</td></tr>
+<tr><td style="font-weight: 500">AI-powered adaptive matching</td><td>1</td><td>1</td><td>5</td><td>7</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size: 13px; line-height: 20px; color: #787774; margin-top: -4px">Scored retrospectively from the feature backlog, client meetings and research.</p>
+<p>The questionnaire reuses the intake questions COT’s staff already asked on the phone, so it cuts the review-and-call wait without new data or infrastructure. AI matching would fit best long term, but needs session data COT doesn’t have yet. The questionnaire collects that data, which makes it AI matching’s first version. Search and profile cards stayed as supporting paths.</p>
+<p><strong>From 25 ideas to an 8-feature MVP.</strong> We ranked 25 features P1 to P5 with the founder. The final P1 set: sign-up and onboarding, matching and booking, search by subject, tutor profile cards, pricing and purchase, a learner/admin dashboard, events and an FAQ chatbot.</p>
+<div style="display: flex; gap: 12px; padding: 16px 20px; border-radius: 6px; background: #F7F7F5; margin: 0 0 16px">
+<span aria-hidden="true" style="font-size: 20px; line-height: 26px">⚖️</span>
+<div style="font-size: 16px; line-height: 26px"><strong>Two calls that moved the list.</strong> Matching moved from P2 to P1 once scoring showed fit was the top pain. And a chatbot replaced in-app tutor messaging: messaging needed more design and didn’t clear the bar for value against effort, while the chatbot answers common questions from a 48-intent FAQ library now and tells us what messaging must handle later. Launch, learn, then build.</div>
+</div>
+<h3>What we cut, and why</h3>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Cut</th><th>Moved to</th><th>Reason</th></tr></thead>
+<tbody>
+<tr><td style="font-weight: 500">Learning progress bar</td><td>P2</td><td>Engineering flagged it as hard to build; “progress” wasn’t defined yet</td></tr>
+<tr><td style="font-weight: 500">Badges and gamification</td><td>P2</td><td>Retention play; no value before booking works</td></tr>
+<tr><td style="font-weight: 500">Session reminders, post-session summary</td><td>P2</td><td>Rely on the core booking loop existing first</td></tr>
+<tr><td style="font-weight: 500">Study groups and community</td><td>P3</td><td>Lowest-scoring pain</td></tr>
+<tr><td style="font-weight: 500">Peer rankings, sharing results</td><td>P4</td><td>Lowest-scoring pain</td></tr>
+<tr><td style="font-weight: 500">In-app video, multiplayer study</td><td>P5</td><td>High effort; outside the booking-first scope</td></tr>
+</tbody>
+</table>
+</div>
+<h2>7. Develop MVP</h2>
+<p>The MVP is one continuous journey: <strong>sign up → get matched → book → pay → confirm</strong>, plus a chatbot and events to bring people back.</p>
+<p><strong>North star: prepaid sessions booked through the app without staff help, and completed, per week.</strong> It rewards what the founder cared about: customers booking on their own, fewer abandoned bookings, sessions paid in advance, and sessions that actually happen.</p>
 <ul>
-<li><strong>100% task success on managing sessions.</strong> Every new user found and changed their session without getting stuck.</li>
-<li><strong>Families spent more and booked ahead,</strong> the behavior the recurring-revenue model depends on.</li>
+<li>Booking-flow completion rate, the inverse of abandonment</li>
+<li>Share of sessions paid with credit bundles rather than one at a time</li>
+<li>Reschedules handled in the app instead of by staff, a proxy for admin cost</li>
+<li>Post-session satisfaction score</li>
+</ul>
+<p>COT had no in-house payment system, so booking and payment were designed to run on a third-party tool, which kept engineering scope small.</p>
+<h3>User stories and acceptance criteria</h3>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>#</th><th>User story</th><th>Acceptance criteria</th></tr></thead>
+<tbody>
+<tr><td style="font-weight: 500">1</td><td>As a new learner, I want to create an account in the app, so that I can book without calling anyone.</td><td>Sign up with email, Google or Apple. A first-time user lands on the matching questionnaire.</td></tr>
+<tr><td style="font-weight: 500">2</td><td>As a learner, I want to answer a few questions and see my best-matched tutors, so that I can choose with confidence.</td><td>Questionnaire mirrors COT’s intake questions. Results show profile cards with subjects and ratings. Book or exit at any point.</td></tr>
+<tr><td style="font-weight: 500">3</td><td>As a learner, I want to pick a time and add it to my calendar, so that I don’t miss the session.</td><td>Only available slots are shown. Confirmation appears immediately with add-to-calendar.</td></tr>
+<tr style="background: #EBF0FD"><td style="font-weight: 600">4</td><td>As a parent or adult learner paying, I want to pay for one session or buy a discounted credit bundle, so that future bookings take one tap. <em>(my flow)</em></td><td>One-off or bundle on one screen. Price and savings shown before paying. Mobile wallets supported. New balance on confirmation.</td></tr>
+<tr style="background: #EBF0FD"><td style="font-weight: 600">5</td><td>As a returning learner, I want to add sessions or top up credits from checkout, so that I can keep learning without starting over. <em>(my flow)</em></td><td>Add sessions from the cart. Buy credits from the account page. Balance updates immediately.</td></tr>
+<tr><td style="font-weight: 500">6</td><td>As a learner, I want to see my upcoming sessions, so that I know what’s next.</td><td>Upcoming sessions listed on the dashboard; each opens to its details.</td></tr>
+<tr><td style="font-weight: 500">7</td><td>As a learner, I want quick answers to common questions, so that I don’t have to wait for staff.</td><td>Chatbot answers from the FAQ library and links to a resource.</td></tr>
+<tr><td style="font-weight: 500">8</td><td>As a learner or parent, I want to find and register for events, so that I can get more from COT.</td><td>Events appear on the dashboard. Registering saves the event to the calendar.</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size: 13px; line-height: 20px; color: #787774; margin-top: -4px">Every story was held to the test plan’s bar: at least 90% task success, under 5 minutes per task, no critical errors.</p>
+<h3>User flows</h3>
+<p>Each flow maps the happy path, alternative paths and error paths. Select a flow to open it full size.</p>
+<figure style="margin: 24px 0">
+<a href="/images/flows/cot-flow-signup.jpg" target="_blank" rel="noopener"><img alt="User flow: create an account or log in" src="/images/flows/cot-flow-signup.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/></a>
+<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">Story 1: create an account, with log-in for returning users.</figcaption>
+</figure>
+<figure style="margin: 24px 0">
+<a href="/images/flows/cot-flow-book-purchase.jpg" target="_blank" rel="noopener"><img alt="User flow: find a tutor and book, or add credits to the account" src="/images/flows/cot-flow-book-purchase.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/></a>
+<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">Stories 2–5: find a tutor and book, or top up credits. The checkout and payment paths are the part I owned, including error recovery.</figcaption>
+</figure>
+<figure style="margin: 24px 0">
+<a href="/images/flows/cot-flow-chatbot.jpg" target="_blank" rel="noopener"><img alt="User flow: use the chatbot to ask FAQs" src="/images/flows/cot-flow-chatbot.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/></a>
+<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">Story 7: ask the chatbot a common question and follow its resource link.</figcaption>
+</figure>
+<figure style="margin: 24px 0">
+<a href="/images/flows/cot-flow-events.jpg" target="_blank" rel="noopener"><img alt="User flow: view upcoming events and register" src="/images/flows/cot-flow-events.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/></a>
+<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">Story 8: find an event, RSVP and add it to the calendar.</figcaption>
+</figure>
+<h2>8. Launch plan</h2>
+<p><strong>The app is in development and hasn’t launched yet,</strong> so this is the go-to-market plan we handed over, not a result.</p>
+<ul>
+<li><strong>First market:</strong> existing customers who already book through the manual intake, mainly parents and adult learners. They already trust the service, so the app replaces a process instead of having to win them over.</li>
+<li><strong>Target population:</strong> a closed beta of current active customers first, then every new inquiry from the website.</li>
+<li><strong>Promotion:</strong> intake-form replies say “book instantly in the app,” an email to existing customers, and discounted credit bundles as the launch incentive. In-app events give people a reason to come back.</li>
 </ul>
 <div class="tbl-wrap">
 <table class="tbl">
-<thead><tr><th>Stage</th><th>Metric</th><th>Signal</th></tr></thead>
+<thead><tr><th>Phase</th><th>What ships</th><th>Gate to move on</th></tr></thead>
 <tbody>
-<tr><td style="font-weight: 500">Activate</td><td>First session booked</td><td>Real</td></tr>
-<tr><td style="font-weight: 500">Commit</td><td>First credit package bought</td><td>Real</td></tr>
-<tr><td style="font-weight: 500">Engage</td><td>Sessions used on schedule</td><td>Real</td></tr>
-<tr style="background: #EBF0FD"><td style="font-weight: 600">Renew</td><td style="font-weight: 600">Second package bought</td><td style="font-weight: 600; color: #2A50C4">North star</td></tr>
+<tr><td style="font-weight: 500">Closed beta</td><td>Existing customers: sign-up, matching, booking, credit bundles</td><td>Booking completion and payments hold</td></tr>
+<tr><td style="font-weight: 500">Open sign-up</td><td>All new website inquiries routed to the app</td><td>North star trending up</td></tr>
+<tr><td style="font-weight: 500">Extend</td><td>Chatbot questions shape tutor messaging; then reminders, session summaries, progress</td><td>Retention holds</td></tr>
 </tbody>
 </table>
 </div>
-<h2>7. Growth plan and roadmap</h2>
+<div style="display: flex; gap: 12px; padding: 16px 20px; border-radius: 6px; background: #F7F7F5; margin: 0 0 16px">
+<span aria-hidden="true" style="font-size: 20px; line-height: 26px">↩️</span>
+<div style="font-size: 16px; line-height: 26px"><strong>Rollback.</strong> The manual form-and-call intake stays live during the beta, and features sit behind toggles. If booking completion or payment success drops, affected users go back to manual intake while it’s fixed.</div>
+</div>
+<h2>9. Customer feedback and iterations</h2>
+<p><strong>All 4 usability test participants completed every task: 100% task success,</strong> beating our 90% bar. Participants had used or considered online tutoring, and worked through six tasks on the hi-fi prototype: book a tutor and add it to the calendar, ask the chatbot a question, view upcoming sessions, buy more credits, register for an event, and create an account.</p>
+<p>Between low and high fidelity we iterated through weekly founder reviews, team critiques and mentor feedback, each round aiming for fewer steps from discovery to confirmation, clearer pricing and less to think about at checkout. Once the beta is live, the north star and its inputs replace task success as the bar.</p>
+<details class="toggle" style="margin-top: 40px">
+<summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>Appendix: the full 25-feature backlog</summary>
+<div class="body">
+<p>All 25 ideas, ranked with the founder. Matching later moved to P1 and the chatbot replaced messaging in the final MVP.</p>
 <div class="tbl-wrap">
 <table class="tbl">
-<thead><tr><th>Phase</th><th>What ships</th><th>Gate</th></tr></thead>
+<thead><tr><th>Priority</th><th>Feature</th><th>User need it serves</th></tr></thead>
 <tbody>
-<tr><td style="font-weight: 500">MVP</td><td>Onboarding, tutor discovery, goal-based booking, credits, dashboard</td><td>Families booking in-app</td></tr>
-<tr><td style="font-weight: 500">v2</td><td>Separate parent and student views, progress tracking, renewal reminders</td><td>Repeat purchases</td></tr>
-<tr><td style="font-weight: 500">v3</td><td>Referrals, tutor tools, group sessions</td><td>Retention holds with new families</td></tr>
+<tr><td>P1</td><td>Sign-up and log-in onboarding</td><td>Founder must-have</td></tr><tr><td>P1</td><td>Pricing and purchase page, with mobile wallet payment</td><td>Founder must-have</td></tr><tr><td>P1</td><td>Learner/admin dashboard with an account-view toggle</td><td>Founder must-have</td></tr><tr><td>P1</td><td>Events promoted in the dashboard</td><td>Founder must-have</td></tr><tr><td>P1</td><td>Tutor search and filter by subject</td><td>Finding a tutor who fits</td></tr><tr><td>P1</td><td>Tutor profile cards with ratings and reviews</td><td>Trusting tutor credibility</td></tr><tr><td>P1</td><td>In-app messaging (replaced by the FAQ chatbot)</td><td>Connection and communication</td></tr><tr><td>P2</td><td>Matching questionnaire and booking flow (moved to P1)</td><td>Finding a tutor who fits</td></tr><tr><td>P2</td><td>Learning progress bar and personalized path</td><td>Finding a tutor who fits</td></tr><tr><td>P2</td><td>Upcoming-session reminders and cancellation</td><td>Booking without friction</td></tr><tr><td>P2</td><td>Post-session summary with billing status and review</td><td>Booking without friction</td></tr><tr><td>P2</td><td>Badges and rewards</td><td>Engaging learning</td></tr><tr><td>P3</td><td>Study sessions and student community</td><td>Peer connection</td></tr><tr><td>P3</td><td>Homework and task list</td><td>Booking without friction</td></tr><tr><td>P4</td><td>Ranking students with global peers</td><td>Peer connection</td></tr><tr><td>P4</td><td>Share results</td><td>Peer connection</td></tr><tr><td>P4</td><td>Competitive learning duels</td><td>Peer connection</td></tr><tr><td>P4</td><td>Interactive lessons sent by tutors</td><td>Booking without friction</td></tr><tr><td>P5</td><td>Tutor micro-learnings that inform the tutor</td><td>Finding a tutor who fits</td></tr><tr><td>P5</td><td>Tutor-influenced micro-learning curriculum</td><td>Finding a tutor who fits</td></tr><tr><td>P5</td><td>Tutor reliability metric made visible</td><td>Trusting tutor credibility</td></tr><tr><td>P5</td><td>Etiquette guidance for tutors</td><td>Trusting tutor credibility</td></tr><tr><td>P5</td><td>Profile display of performance</td><td>Peer connection</td></tr><tr><td>P5</td><td>Multiplayer joint study</td><td>Engaging learning</td></tr><tr><td>P5</td><td>In-app video call</td><td>Engaging learning</td></tr>
 </tbody>
 </table>
 </div>
+</div>
+</details>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 64px; padding-top: 20px; border-top: 1px solid #E9E9E7; font-size: 14px">
 <a href="/work/prepare" style="color: #787774">← 🌦️ Prepare</a>
 <a href="/work/just-hair" style="font-weight: 500">Next: 💇🏾‍♀️ Just Hair →</a>

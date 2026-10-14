@@ -264,151 +264,312 @@ The trade-off I'm watching: sign-up adds friction to the instant first answer th
 Next: 🎓 C.O.T →
 
 
-=== SOURCE: Case study: C.O.T (Canada Online Tutoring) (/work/cot) ===
+=== SOURCE: Case study: C.O.T (/work/cot) ===
 
 🎓
 
 # C.O.T
 
-Canada Online Tutoring ran on phone calls and emails. I turned it into a mobile app with recurring revenue built in.
+COT’s tutoring ran on intake forms and phone calls. We turned it into a self-serve app where learners sign up, get matched, book and prepay.
 
 Status
 
-MVP, handed off
+MVP, in development
+
 Client
 
-Canada Online Tutoring
+COT, an online tutoring company (under NDA)
+
 My role
 
-Product lead, UX researcher and UI designer
+UX research and product design; I owned payment and checkout
+
+Team
+
+Jr designer, Sr designer, the founder and COT’s engineering team
+
 Timeline
 
 6 weeks
+
 Segment
 
-Parents and adult learners: the people who book and pay
+Learners: students and adult learners, with parents as the purchaser
+
 Tested with
 
-10 families
+4 participants, 100% task success
+
 North star
 
-Credit repurchase rate
+Prepaid sessions booked in the app without staff help, and completed, per week
+
 Stack
 
 Figma, Notion
-Links
 
-Figma file
+Result
 
-Outcome
+I turned COT’s form-and-phone-call intake into a self-serve mobile flow, with one other designer, in a 6-week client engagement. We narrowed 25 feature ideas to an 8-feature MVP; the prototype reached 100% task success with 4 testers and is now in development with COT’s engineering team.
 
-Handed off in six weeks after testing with 10 families. 100% of new users found and changed their sessions without getting stuck, and families confidently chose larger packages and booked ahead.
+## 1. Background
 
-## 1. The problem and who had it
+COT is an online tutoring company that connects students and adult learners with professional tutors. It had a working website but no mobile app, and every new customer still went through a manual intake. We delivered a five-flow, high-fidelity prototype with annotations, handed off for development.
 
-A tutoring model that worked had stopped scaling. Booking, rescheduling, cancelling and paying all ran through emails and phone calls.
+## 2. Project overview
 
-- Parents and students hit friction every time plans changed, and scattered payment details created mistrust.
+Mission. COT gives students personalized one-on-one virtual tutoring from qualified educators, helping them build confidence and reach their academic potential.
 
-- The business couldn't grow without adding admin staff and had no visibility into retention.
+The business problem. Before anyone could book, they filled in a form, waited for an internal review, then got on a live call. The founder said this was “leading to lost revenue from potential customers due to wait times,” and it tied staff time to every booking and reschedule. He wanted customers to book on their own, in an app built for actions, not reading.
 
-The core tension: modernize without breaking what worked. The tutoring philosophy was why families stayed, so the product had to extend it, not replace it.
+Problem statement. Parents and adult learners struggle to find a tutor they trust who fits their goals, then hit friction scheduling, paying and communicating. The app had to cut the time from first contact to first booked session without losing the trust and tutor quality the manual process protected.
 
-## 2. Segment and business case
+## 3. Ideation overview
 
-The app served two users: the person who learns and the person who pays. I prioritized the payer. For younger students that's the parent; for adult learners it's themselves. Payers choose the tutor and judge whether it's working.
+Stakeholders. Weekly reviews with the founder to agree scope and priorities, and alignment with his engineering team on what could ship. The founder’s must-haves set the guardrails: onboarding, a dashboard, pricing and payment, session booking and events.
 
-- "I need to know exactly who is teaching my child." Credentials decide who gets hired, so detailed tutor profiles became a conversion feature.
+Scope. We built on an earlier team’s research and added our own in week one:
 
-- "I need a tutor, but I also have a deadline." Families arrive with a goal and an end date, so tutoring can be sold as a plan.
+- 4 user interviews: a parent, a student, a teacher who tutors and a working professional upskilling
 
-Who benefits from prepaid credits | How |
+- 4 competitor apps reviewed by signing up and walking their flows (Wyzant, Kadama, Varsity Tutors, Chegg)
 
-The business | Revenue captured earlier, recurring purchases, efficient tutor scheduling |
+- AI-assisted secondary research on the tutoring market, then affinity mapping into themes
 
-Parents | Simple payment, easy rescheduling, a discount for committing |
+Target customer. Research produced four personas:
 
-Students | More consistent sessions, which is what improves results |
+Persona | Who they are | Key goal | Key frustration
 
-## 3. The decisions: what I chose and what I cut
+Mia | Teen student | Fun learning and visible progress | Boredom, low motivation
 
-The biggest call: credits are the core of the experience, not a payment screen bolted on at the end.
+Jordan | Adult learner upskilling for work | Efficient learning on a flexible schedule | Hard to find the right tutor; manual scheduling
 
-Decision | I chose | Over | Why |
+David | Parent and decision-maker | Transparency, convenience, a tutor he trusts | Confusing scheduling; unclear progress
 
-Payment model | Prepaid credit packages | Pay per session | Earlier revenue and commitment that improves outcomes |
+Sophia | Tutor | Professional growth, client retention | Fragmented tools, little visibility
 
-App structure | One app, role-based onboarding | Separate apps | One platform to build; the right journey from day one |
+Jordan, an adult learner: part of the target segment, books and pays for himself.
 
-Build for first | Payers | Students | Revenue and trust run through whoever pays |
+Mia, a student learner: part of the target segment.
 
-Booking | Plans around a goal and end date | One session at a time | Matches how families think; sells sessions up front |
+David, a parent: the purchaser, which shaped the checkout.
 
-## What I cut from the MVP
+## 4. Customer segmentation
 
-- Video tutoring in the app. Sessions already ran on existing video tools.
+We prioritized learners: the students and adult learners who take the sessions. Parents stay in the picture as the purchaser.
 
-- A native calendar. The booking flow handles scheduling.
+Segment | Impact | Urgency | Size of market | Total
 
-- Native payment processing. A third-party provider is faster and safer.
+Learners: students and adult learners | 4 | 5 | 4 | 13
 
-- Separate parent and student interfaces. Role is captured at sign-up so v2 can split them without rework.
+Tutors | 3 | 3 | 3 | 9
 
-## 4. How I prioritized, and where we disagreed
+Parents (as purchasers) | 3 | 2 | 3 | 8
 
-Research produced six user needs; the MVP shipped the first two, checked against the client's must-haves: onboarding, dashboard, pricing and payment, booking and events.
+Scored 1–5, retrospectively from research findings.
 
-Rank | User need | MVP? |
+Learners feel the pain at every session and are most of the user base, so they shape the core flow: match, book, attend. Parents mostly enter at one moment, when they pay. That split shaped the MVP: matching and booking are built around the learner, and the checkout I owned is built for whoever holds the card. Tutors mattered for trust, so they appear through profile cards rather than a tutor-side app.
 
-1 | Book, reschedule and pay without friction | Yes |
+## 5. Customer pain point
 
-2 | Find a tutor who fits my goals | Yes |
+We prioritized finding a tutor who fits, just ahead of booking and payment friction.
 
-3 | Engaging learning and visible progress | Deferred |
+Pain point | Impact | Urgency | Size | Total
 
-4 | Tutors showcase results and earn trust | Partly |
+Finding a tutor who fits my goals and learning style | 5 | 5 | 4 | 14
 
-5 | Learner and parent tools in one app | Partly |
+Booking, rescheduling and paying without friction | 5 | 5 | 3 | 13
 
-6 | Connect students with each other | Later |
+Engaging learning with visible progress | 4 | 5 | 3 | 12
+
+Trusting tutor credibility | 4 | 5 | 3 | 12
+
+Separate learner and parent/admin views | 3 | 2 | 2 | 7
+
+Connecting with peer learners | 2 | 2 | 1 | 5
+
+Scored 1–5, retrospectively from research findings.
+
+Booking friction was the pain the founder felt most, and interviews backed it up: one parent had to phone in just to move a session, and when a tutor cancelled, her next session slipped a full week. But scoring changed the order. A smooth booking flow is worthless if the learner doesn’t trust the match, so matching came first, and booking and checkout followed from it.
+
+## 6. Prioritized solution
+
+We chose a matching questionnaire that leads straight to top-matched tutors and booking: the buildable first version of smart matching.
+
+Proposed solution | Ease (5 = easy) | Eng. effort (5 = easy) | Effectiveness | Total
+
+Matching questionnaire → top-matched tutors → book or exit | 4 | 3 | 5 | 12
+
+Search and filter tutors by subject | 4 | 4 | 3 | 11
+
+Tutor profile cards with ratings and reviews | 3 | 3 | 4 | 10
+
+Personalized learning path and progress bar | 2 | 1 | 4 | 7
+
+AI-powered adaptive matching | 1 | 1 | 5 | 7
+
+Scored retrospectively from the feature backlog, client meetings and research.
+
+The questionnaire reuses the intake questions COT’s staff already asked on the phone, so it cuts the review-and-call wait without new data or infrastructure. AI matching would fit best long term, but needs session data COT doesn’t have yet. The questionnaire collects that data, which makes it AI matching’s first version. Search and profile cards stayed as supporting paths.
+
+From 25 ideas to an 8-feature MVP. We ranked 25 features P1 to P5 with the founder. The final P1 set: sign-up and onboarding, matching and booking, search by subject, tutor profile cards, pricing and purchase, a learner/admin dashboard, events and an FAQ chatbot.
 
 ⚖️
-The disagreement: gamification. I pushed for streaks and badges, which scored well with students. The client prioritized the core path to booking and paying. We deferred gamification and moved progress tracking to v2, where it serves students and parents alike.
 
-## 5. How I designed it
+Two calls that moved the list. Matching moved from P2 to P1 once scoring showed fit was the top pain. And a chatbot replaced in-app tutor messaging: messaging needed more design and didn’t clear the bar for value against effort, while the chatbot answers common questions from a 48-intent FAQ library now and tells us what messaging must handle later. Launch, learn, then build.
 
-I took the project from market research and interviews through lo-fi to hi-fi design and an interactive prototype, iterating with the client's executives.
+### What we cut, and why
 
-The top row is the core path: home to a booked, paid session in four screens.
+Cut | Moved to | Reason
 
-## 6. Outcome and how I measure success
+Learning progress bar | P2 | Engineering flagged it as hard to build; “progress” wasn’t defined yet
 
-- 100% task success on managing sessions. Every new user found and changed their session without getting stuck.
+Badges and gamification | P2 | Retention play; no value before booking works
 
-- Families spent more and booked ahead, the behavior the recurring-revenue model depends on.
+Session reminders, post-session summary | P2 | Rely on the core booking loop existing first
 
-Stage | Metric | Signal |
+Study groups and community | P3 | Lowest-scoring pain
 
-Activate | First session booked | Real |
+Peer rankings, sharing results | P4 | Lowest-scoring pain
 
-Commit | First credit package bought | Real |
+In-app video, multiplayer study | P5 | High effort; outside the booking-first scope
 
-Engage | Sessions used on schedule | Real |
+## 7. Develop MVP
 
-Renew | Second package bought | North star |
+The MVP is one continuous journey: sign up → get matched → book → pay → confirm, plus a chatbot and events to bring people back.
 
-## 7. Growth plan and roadmap
+North star: prepaid sessions booked through the app without staff help, and completed, per week. It rewards what the founder cared about: customers booking on their own, fewer abandoned bookings, sessions paid in advance, and sessions that actually happen.
 
-Phase | What ships | Gate |
+- Booking-flow completion rate, the inverse of abandonment
 
-MVP | Onboarding, tutor discovery, goal-based booking, credits, dashboard | Families booking in-app |
+- Share of sessions paid with credit bundles rather than one at a time
 
-v2 | Separate parent and student views, progress tracking, renewal reminders | Repeat purchases |
+- Reschedules handled in the app instead of by staff, a proxy for admin cost
 
-v3 | Referrals, tutor tools, group sessions | Retention holds with new families |
+- Post-session satisfaction score
 
-← 🌦️ Prepare
-Next: 💇🏾‍♀️ Just Hair →
+COT had no in-house payment system, so booking and payment were designed to run on a third-party tool, which kept engineering scope small.
+
+### User stories and acceptance criteria
+
+# | User story | Acceptance criteria
+
+1 | As a new learner, I want to create an account in the app, so that I can book without calling anyone. | Sign up with email, Google or Apple. A first-time user lands on the matching questionnaire.
+
+2 | As a learner, I want to answer a few questions and see my best-matched tutors, so that I can choose with confidence. | Questionnaire mirrors COT’s intake questions. Results show profile cards with subjects and ratings. Book or exit at any point.
+
+3 | As a learner, I want to pick a time and add it to my calendar, so that I don’t miss the session. | Only available slots are shown. Confirmation appears immediately with add-to-calendar.
+
+4 | As a parent or adult learner paying, I want to pay for one session or buy a discounted credit bundle, so that future bookings take one tap. (my flow) | One-off or bundle on one screen. Price and savings shown before paying. Mobile wallets supported. New balance on confirmation.
+
+5 | As a returning learner, I want to add sessions or top up credits from checkout, so that I can keep learning without starting over. (my flow) | Add sessions from the cart. Buy credits from the account page. Balance updates immediately.
+
+6 | As a learner, I want to see my upcoming sessions, so that I know what’s next. | Upcoming sessions listed on the dashboard; each opens to its details.
+
+7 | As a learner, I want quick answers to common questions, so that I don’t have to wait for staff. | Chatbot answers from the FAQ library and links to a resource.
+
+8 | As a learner or parent, I want to find and register for events, so that I can get more from COT. | Events appear on the dashboard. Registering saves the event to the calendar.
+
+Every story was held to the test plan’s bar: at least 90% task success, under 5 minutes per task, no critical errors.
+
+### User flows
+
+Each flow maps the happy path, alternative paths and error paths. Select a flow to open it full size.
+
+Story 1: create an account, with log-in for returning users.
+
+Stories 2–5: find a tutor and book, or top up credits. The checkout and payment paths are the part I owned, including error recovery.
+
+Story 7: ask the chatbot a common question and follow its resource link.
+
+Story 8: find an event, RSVP and add it to the calendar.
+
+## 8. Launch plan
+
+The app is in development and hasn’t launched yet, so this is the go-to-market plan we handed over, not a result.
+
+- First market: existing customers who already book through the manual intake, mainly parents and adult learners. They already trust the service, so the app replaces a process instead of having to win them over.
+
+- Target population: a closed beta of current active customers first, then every new inquiry from the website.
+
+- Promotion: intake-form replies say “book instantly in the app,” an email to existing customers, and discounted credit bundles as the launch incentive. In-app events give people a reason to come back.
+
+Phase | What ships | Gate to move on
+
+Closed beta | Existing customers: sign-up, matching, booking, credit bundles | Booking completion and payments hold
+
+Open sign-up | All new website inquiries routed to the app | North star trending up
+
+Extend | Chatbot questions shape tutor messaging; then reminders, session summaries, progress | Retention holds
+
+↩️
+
+Rollback. The manual form-and-call intake stays live during the beta, and features sit behind toggles. If booking completion or payment success drops, affected users go back to manual intake while it’s fixed.
+
+## 9. Customer feedback and iterations
+
+All 4 usability test participants completed every task: 100% task success, beating our 90% bar. Participants had used or considered online tutoring, and worked through six tasks on the hi-fi prototype: book a tutor and add it to the calendar, ask the chatbot a question, view upcoming sessions, buy more credits, register for an event, and create an account.
+
+Between low and high fidelity we iterated through weekly founder reviews, team critiques and mentor feedback, each round aiming for fewer steps from discovery to confirmation, clearer pricing and less to think about at checkout. Once the beta is live, the north star and its inputs replace task success as the bar.
+
+Appendix: the full 25-feature backlog
+
+All 25 ideas, ranked with the founder. Matching later moved to P1 and the chatbot replaced messaging in the final MVP.
+
+Priority | Feature | User need it serves
+
+P1 | Sign-up and log-in onboarding | Founder must-have
+
+P1 | Pricing and purchase page, with mobile wallet payment | Founder must-have
+
+P1 | Learner/admin dashboard with an account-view toggle | Founder must-have
+
+P1 | Events promoted in the dashboard | Founder must-have
+
+P1 | Tutor search and filter by subject | Finding a tutor who fits
+
+P1 | Tutor profile cards with ratings and reviews | Trusting tutor credibility
+
+P1 | In-app messaging (replaced by the FAQ chatbot) | Connection and communication
+
+P2 | Matching questionnaire and booking flow (moved to P1) | Finding a tutor who fits
+
+P2 | Learning progress bar and personalized path | Finding a tutor who fits
+
+P2 | Upcoming-session reminders and cancellation | Booking without friction
+
+P2 | Post-session summary with billing status and review | Booking without friction
+
+P2 | Badges and rewards | Engaging learning
+
+P3 | Study sessions and student community | Peer connection
+
+P3 | Homework and task list | Booking without friction
+
+P4 | Ranking students with global peers | Peer connection
+
+P4 | Share results | Peer connection
+
+P4 | Competitive learning duels | Peer connection
+
+P4 | Interactive lessons sent by tutors | Booking without friction
+
+P5 | Tutor micro-learnings that inform the tutor | Finding a tutor who fits
+
+P5 | Tutor-influenced micro-learning curriculum | Finding a tutor who fits
+
+P5 | Tutor reliability metric made visible | Trusting tutor credibility
+
+P5 | Etiquette guidance for tutors | Trusting tutor credibility
+
+P5 | Profile display of performance | Peer connection
+
+P5 | Multiplayer joint study | Engaging learning
+
+P5 | In-app video call | Engaging learning
+
+← 🌦️ Prepare Next: 💇🏾‍♀️ Just Hair →
+
 
 
 === SOURCE: Case study: Just Hair (/work/just-hair) ===
@@ -417,132 +578,332 @@ Next: 💇🏾‍♀️ Just Hair →
 
 # Just Hair
 
-An AI hair-care assistant for textured hair that replaces years of trial and error with personalized guidance, and explains every recommendation before it automates.
+An AI hair-care assistant for women with textured hair: it explains your hair before it recommends anything, so years of trial and error become a routine you can trust.
 
 Status
 
-MVP, clickable prototype
+Concept, tested hi-fi prototype
+
+Context
+
+Solo project, ELVTR product design program
+
 My role
 
-Product lead, UX researcher and UI designer
+Product and UX, end to end: research, prioritization, design and testing
+
 Timeline
 
 6 weeks
+
 Segment
 
-Women with textured hair (3C to 4C) who spend heavily on hair care
+High-spending professionals with textured hair
+
 Research
 
-4 in-depth interviews, U.S. and Indonesia, ages 20s to 40s
+6 interviews, U.S. and Indonesia, ages 20s to 40s
+
 Tested with
 
-All 4 interview participants
+6 participants (mid-fi) and 7 unmoderated Maze testers
+
 North star
 
-Routine adherence, week over week
+Routine followed for 3+ weeks
+
 Stack
 
-Figma, Notion
-Links
+Figma, Maze, Notion; LLM feasibility in Lovable
 
-Figma file
+Result
 
-Outcome
-
-A clickable MVP in six weeks, built on four in-depth interviews and tested by all four participants. The bet: in a category tied to identity, education comes before automation.
+I took Just Hair from six interviews to a tested hi-fi prototype in six weeks, solo. In an unmoderated Maze test, 85% completed the routine flow without help and 86% said the hair report was what they needed.
 
 💬
-"It took me 10 years to find products that actually worked." Research participant
 
-## 1. The problem and who had it
+“It took me 10 years to find products that actually worked.” Research participant
 
-Women with textured hair struggle to care for it confidently in ways that fit their lives. The industry puts the burden of expertise on the user. The gap isn't products or information; it's confidence and clarity.
+## 1. Background
 
-- Trial and error is slow and expensive: premium prices, and years of buying and abandoning products.
+Just Hair is my concept project from the ELVTR product design program. I chose it because textured-hair care is a deep, global problem that the industry underserves, and because large language models can finally read a photo and explain what they see in plain language. I owned every stage, and tested the LLM connection for feasibility in Lovable.
 
-- Advice is everywhere but rarely fits: "A lot of Googling, a lot of YouTube."
+## 2. Project overview
 
-- Life and climate change the routine: "In Bali, I wash every day."
+Vision. Help women with textured hair understand their own hair first, then care for it with confidence and spend less getting there.
 
-- Trusted stylists are hard to find, so most care happens at home.
+The market. Black consumers spent $6.6 billion on beauty in 2021, yet are 1.6 times more likely than White consumers to be dissatisfied with hair care products, and only 13% say it’s easy to find products that meet their needs at mass retailers (McKinsey, 2022). In 2017 they accounted for $54 million of the $63 million spent on ethnic hair and beauty products (NielsenIQ, 2018). High spend, low satisfaction: the gap is guidance, not supply.
 
-## 2. Segment and business case
+Problem statement. Most people with textured hair don’t fully understand their own hair, and often take a decade or more to learn it. They rely on reviews, influencers and costly trial and error, so the industry puts the burden of expertise on the customer.
 
-I built first for high-spending users, whose spend is the business case: redirect it toward the right products and the product earns trust and a path to revenue.
+## 3. Ideation overview
 
-Monetization path | How it pays | Why it fits |
+Scope. A solo project: I made the product calls and tested them with users.
 
-Product recommendations | Affiliate revenue or brand partners | Users already spend; these are purchase-intent moments |
+- 6 interviews over Zoom and phone: 2 with tightly textured hair, 3 medium textured, 1 straight, across the U.S. and Indonesia, ages 20s to 40s
 
-Premium routines | Subscription for tracking and household profiles | Value grows the longer someone uses it |
+- Secondary research on the hair-care market and on what LLMs can reliably analyze
 
-Stylist marketplace | Booking fee for vetted stylists | Solves the trust problem research surfaced |
+- A competitive scan of curl quizzes and product lines participants already used (Prose, Cantu, Shea Moisture)
 
-The risk I'd manage: affiliate money can bias recommendations, so they stay tied to the hair profile, with sponsorship labeled.
+- Affinity mapping into six themes, then problem statements, POVs and How Might We questions
 
-## 3. The decisions: what I chose and what I cut
+Target customer. Three personas came out of the research:
 
-The biggest call: don't compete with YouTube and Google; build the guided path they can't offer.
+Persona | Who she is | Key goal | Key pain
 
-Decision | I chose | Over | Why |
+Jasmine | 26, London, marketing director who travels | A healthy routine and less money wasted on products | Spends too much on products that don’t work; hard to find stylists abroad
 
-Core experience | A guided flow | A search bar or feed | Win on clarity, not volume |
+Sherelle | 40, Melbourne, mother of a 6-year-old | Teach her daughter to love and care for her hair | Her daughter’s hair is different from hers; afraid of harmful products
 
-Understanding the user | Photo analysis plus lifestyle questions | Hair type alone | Routines fail when they ignore real life |
+Jeanette | 21, Miami, swimmer with an active life | A routine that survives sweat and pool days | No routine, so her hair usually ends up in a bun
 
-AI's role | Explain the why in plain language | Just output a routine | Trust comes before automation |
+Jasmine, the target segment: high spend, little to show for it.
 
-Feedback | Thumbs up or down everywhere | No feedback loop | Users get control; the system learns |
+Sherelle: a strong second segment, planned for v2 household profiles.
+
+Jeanette: lifestyle drives her routine, which shaped the lifestyle questionnaire.
+
+## 4. Customer segmentation
+
+We prioritized high-spending professionals with textured hair, the Jasmine segment. Their spend is the business case: redirect it to the right products and the product earns trust and a path to revenue.
+
+Segment | Impact | Urgency | Size of market | Total
+
+High-spending professionals with textured hair | 5 | 4 | 4 | 13
+
+Parents caring for a child’s textured hair | 4 | 4 | 3 | 11
+
+Active, lifestyle-driven young women | 3 | 3 | 3 | 9
+
+Scored 1–5, retrospectively from research findings.
+
+Parents scored close behind and stay in the roadmap as household profiles; the same analysis and routines serve them once the core works for one person.
+
+## 5. Customer pain point
+
+We prioritized not understanding my own hair, the root cause behind years of trial and error.
+
+Pain point | Impact | Urgency | Size | Total
+
+Not understanding my own hair, so years of trial and error | 5 | 5 | 5 | 15
+
+Finding products that fit my hair, climate and lifestyle | 5 | 4 | 4 | 13
+
+Trusting ingredients are safe | 4 | 3 | 4 | 11
+
+Finding a stylist who knows textured hair | 4 | 3 | 3 | 10
+
+Buying products locally or abroad | 3 | 3 | 2 | 8
+
+Scored 1–5, retrospectively from research findings.
+
+Every interview told the same story: “A lot of Googling, a lot of YouTube,” products bought and abandoned, and routines that broke when life or climate changed (“In Bali, I wash every day”). Product fit scored second, but recommending products to someone who doesn’t understand her hair only restarts the cycle, so understanding came first.
+
+## 6. Prioritized solution
+
+We chose photo analysis with a plain-language hair report, fed by a short lifestyle questionnaire.
+
+Proposed solution | Ease (5 = easy) | Eng. effort (5 = easy) | Effectiveness | Total
+
+Photo analysis + plain-language hair report | 4 | 4 | 5 | 13
+
+Lifestyle questionnaire, by voice or text | 4 | 4 | 4 | 12
+
+Product recommendations from the profile | 4 | 4 | 3 | 11
+
+Routine builder with reminders | 3 | 2 | 5 | 10
+
+Stylist profiles and salon recommendations | 2 | 2 | 3 | 7
+
+AI hairstyle recommendation | 2 | 2 | 2 | 6
+
+Effort mapped from my feature backlog’s sizing (S = 4, M = 3, L = 2); scored retrospectively.
+
+The analysis answers the top pain directly and was small to build on an existing multimodal model. The questionnaire and recommendations came with it, because a routine that ignores real life fails.
 
 ⚖️
-The hard call: good recommendations need a long lifestyle questionnaire, but long forms are where people drop off. I made the questionnaire part of the value, not a gate, showing users how each answer shapes their routine.
 
-Research surfaced five opportunities; the MVP built the three that remove trial and error (analysis, recommendations, routines). Styling tutorials, local buying options and stylist booking were deferred.
+The call that changed the MVP: routines moved up. The routine builder was P2 and the largest feature, but a scan alone is a one-time novelty. Routines give people a reason to come back, rescan their hair at different moments and see it improve, which builds trust and makes the app worth keeping. I promoted routines and reminders into the MVP and made them the flow I tested.
 
-## 4. The AI strategy I defined for launch
+### Key product decisions
 
-Ground an existing model in a curated hair-care knowledge base instead of training one. It's fast to ship, keeps answers grounded in vetted hair science, and updates without retraining. Fine-tuning comes in v2, once real users' thumbs-up and thumbs-down signals give it something to learn from.
+Decision | I chose | Over | Why
 
-Privacy, built into the product
+Core experience | A guided flow | A search bar or feed | Win on clarity, not on volume of content
+
+Understanding the user | Photo analysis plus lifestyle questions | Hair type alone | Routines fail when they ignore real life
+
+AI’s role | Explain the why in plain language | Just output a routine | Trust comes before automation
+
+Feedback | Thumbs up or down on every result | No feedback loop | Users get control; the model learns
+
+🧩
+
+The hard trade-off: good recommendations need a long lifestyle questionnaire, and long forms are where people drop off. I made the questionnaire part of the value, not a gate, showing how each answer shapes the routine.
+
+### What we cut, and why
+
+Cut | Moved to | Reason
+
+Stylist profiles and salon recommendations | P4 | Real need, but a marketplace is a separate product; it needs trust and supply first
+
+AI hairstyle recommendation | P4 | Styling isn’t the root pain; high effort
+
+Photo inspiration wall | P4 | Engagement feature with no link to understanding
+
+Product scan for match analysis | P3 | Valuable, but depends on a product database that doesn’t exist yet
+
+## 7. Develop MVP
+
+The MVP is one loop: photo → plain-language report → lifestyle questions → routine and matched products → reminders and rescans, with a thumbs up or down on every answer.
+
+North star: routines followed for three or more weeks. An analysis is a one-time novelty; weeks of routine change hair and earn trust.
+
+Stage | Metric | Signal
+
+Try | Photo uploaded | Vanity on its own
+
+Understand | Report read, questionnaire done | Real
+
+Commit | Routine started, reminders on | Real
+
+Habit | Routine followed 3+ weeks | North star
+
+### User stories and acceptance criteria
+
+# | User story | Acceptance criteria
+
+1 | As a woman with textured hair, I want to take or upload a photo and get an analysis, so that I finally understand what my hair needs. | Camera or gallery upload, with tips on the confirm screen. The report explains results in plain language. Thumbs up or down on every result.
+
+2 | As a user, I want to describe my lifestyle by voice or text, so that advice fits my climate and routine. | Voice or text input. The assistant asks follow-up questions and offers suggested replies.
+
+3 | As a user, I want products matched to my profile, so that I stop paying for trial and error. | Each recommendation shows why it fits my profile. Save or shop from the list. Sponsored items labeled.
+
+4 | As a user, I want to turn my report into a routine and add it to my calendar, so that I actually stick to it. | An intro screen sets expectations. The routine is generated from my answers. Add to calendar in one step, with a confirmation.
+
+5 | As a returning user, I want reminders and rescans, so that I can see my hair change over time. | Wash-day and treatment reminders. Rescan at any time from home.
+
+The test plan’s bar: complete each task with no errors.
+
+### User flows
+
+The task flow is the happy path; the user flow shows every branch after the first report. Select a flow to open it full size.
+
+Stories 1 and 3: from home to an uploaded photo, LLM review, the report and a response.
+
+Stories 1–5: after the report, users rate it, add voice or text context, view products, view the analysis or build a routine and add it to the calendar.
+
+## 8. Launch plan
+
+Just Hair hasn’t launched; this is how it will go to market. An iOS version is in definition.
+
+- First market: high-spending professionals with textured hair in the U.S., starting with the research participants and a waitlist.
+
+- Promotion: natural-hair creators and communities on YouTube and social, where research showed women already go to learn.
+
+- AI approach: ground an existing model in a curated hair-care knowledge base instead of training one. It ships fast, stays grounded in vetted hair science and updates without retraining. Fine-tuning comes once real thumbs up and down signals exist.
+
+Phase | What ships | Gate to move on
+
+Beta | Analysis, questionnaire, routines, recommendations, feedback signals | Over 60% of users rate results; analysis rated accurate over 95% of the time
+
+v2 | Product scan anywhere, progress tracking, household profiles, fine-tuned model | Routines followed 3+ weeks
+
+v3 | Stylist marketplace, climate and travel adjustments | Recommendation revenue proven
+
+↩️
+
+Rollback. If accuracy signals drop below the gate, product recommendations switch off and the report falls back to education only, until the knowledge base is fixed.
+
+### How it will make money
+
+Path | How it pays | Why it fits
+
+Product recommendations | Affiliate revenue or brand partners | Users already spend; these are purchase-intent moments
+
+Premium routines | Subscription for tracking and household profiles | Value grows the longer someone uses it
+
+Stylist marketplace | Booking fee for vetted stylists | Solves the trust problem research surfaced
+
+The risk to manage: affiliate money can bias recommendations, so they will stay tied to the hair profile, with sponsorship labeled.
+
+### Privacy, built in from day one
 
 - Explicit consent before any data improves the AI
 
 - Entries anonymized: names, location and photo metadata stripped
 
-- A clear "don't train on my data" option
+- A clear “don’t train on my data” option
 
 - A plain-English explanation of how data helps the user
 
-## 5. How I designed it
+## 9. Customer feedback and iterations
 
-Start with a photo, get a plain-language summary, open the full analysis, turn it into a routine, then see matched products.
+Two rounds of testing shaped the final design. First a mid-fi test with the six research participants across three flows: complete a hair analysis, create a routine and find products.
 
-## 6. Outcome and how I measure success
+What we saw | What I changed
 
-The metric that matters is whether people keep following their routine. An analysis is a one-time novelty; weeks of routine change hair and earn trust.
+The “swipe no” button made people hesitate | Clarified the choice
 
-Stage | Metric | Signal |
+Suggested replies sped people through the analysis | Kept and expanded them
 
-Try | Photo uploaded | Vanity on its own |
+The back arrow and back button confused people | Replaced with a Cancel button
 
-Understand | Analysis read, questionnaire done | Real |
+The photo-upload check lacked context | Added a title, tips and guidance
 
-Commit | Routine started, reminders on | Real |
+People wanted more guidance | Added an intro before the routine questions and a congratulations step that leads to add-to-calendar
 
-Habit | Routine followed 3+ weeks | North star |
+Then an unmoderated Maze test of the routine flow, with no help: 17 people started and 7 finished.
 
-## 7. Growth plan and roadmap
+Result | Score
 
-Phase | What ships | Gate |
+Completed the routine flow | 85%
 
-MVP | Analysis, questionnaire, routines, recommendations, signals | Routines followed 3+ weeks |
+Said the hair report was what they needed | 86%
 
-v2 | Progress tracking, explainability, household profiles, fine-tuned model | Signals improve over time |
+Rated its value to them 4 out of 5 | 57%
 
-v3 | Stylist marketplace, climate and travel adjustments | Recommendation revenue proven |
+Found navigation “somewhat intuitive” | 57%
 
-← 🎓 C.O.T
-Next: 🔧 GoTukang →
+Testers liked the routine questions and the clean layout but found the light-blue buttons looked disabled and the background too busy. The nine changes that followed: a stronger call-to-action color, outlines instead of background scribbles, more photos, guide text, simpler copy for all levels of English, a stronger blur behind pop-ups, clearer checkboxes and better contrast.
+
+Appendix: the full feature backlog
+
+All 14 features, ranked P1 to P4 with effort sizes.
+
+Priority | Feature | Effort | Outcome
+
+P1 | Log in and sign up | S | In prototype
+
+P1 | Photo or video upload and AI analysis | S | In prototype
+
+P1 | Product recommendations | S | In prototype
+
+P1 | AI lifestyle questionnaire by voice | S | In prototype
+
+P1 | Thumbs up or down signals on results | S | In prototype
+
+P2 | Photo uploads and profile | S | In prototype
+
+P2 | Routine creator | L | In prototype (promoted)
+
+P2 | Scheduler and reminders | M | In prototype
+
+P3 | Product scan for match analysis | M | Deferred
+
+P3 | Data-sharing settings | S | Planned for launch
+
+P4 | Stylist profiles | L | Cut
+
+P4 | Salon recommendations | L | Cut
+
+P4 | AI hairstyle recommendation | L | Cut
+
+P4 | Photo inspiration wall | XS | Cut
+
+← 🎓 C.O.T Next: 🔧 GoTukang →
+
 
 
 === SOURCE: Case study: GoTukang (/work/gotukang) ===
@@ -551,117 +912,312 @@ Next: 🔧 GoTukang →
 
 # GoTukang
 
-A concept for adding on-demand handyman services to Gojek, built on trust signals instead of word of mouth.
+A concept for booking trusted handymen inside Gojek, so business owners in Bali can stop relying on “I know a guy.”
 
 Status
 
-Concept Personal project, not affiliated with Gojek
-Type
+Concept, tested hi-fi prototype
 
-Feature add inside an existing super app
+Context
+
+Solo project: add a feature to an existing app. Not affiliated with Gojek.
+
 My role
 
-Product lead, UX researcher and UI designer
+Product lead and designer: research, prioritization, design and testing
+
+Timeline
+
+July to September 2025
+
 Segment
 
-Small business owners and property managers in Indonesia
+Small business and property owners in Bali
+
 Research
 
-3 interviews, plus market and competitive analysis
+3 in-person interviews, competitive SWOT and a four-market analysis
+
+Tested with
+
+4 rounds of lo-fi testing; 7 participants in Maze
+
 North star
 
-Repeat bookings
+Books again within 60 days
+
 Stack
 
-Figma, Notion
-Links
+Figma, FigJam, Maze, Notion, Midjourney
 
-Figma file
+Result
 
-Outcome
+I took GoTukang from interviews with Bali business owners to a tested hi-fi prototype inside Gojek’s app, solo, in under three months. In the final Maze test, all 7 participants sent a job invite to a tukang of their choice (100% task success) and rated the experience 5 out of 5.
 
-A concept grounded in market research suggesting Gojek is well placed to own this vertical. The bet: in a market that runs on referrals, trust has to be built into the product itself.
+💬
 
-## 1. The problem and who had it
+“If you ask anyone in Indonesia how they get something fixed in their home or business, they’ll tell you they know a guy.” From my project brief
 
-Business owners and property managers had no reliable way to get handyman work done, and it cost them revenue. A no-show means a shop can't open or a rental can't turn over.
+## 1. Background
 
-- Sourcing ran on personal networks, so finding someone trustworthy was slow.
+The brief was to add a feature to an existing app without breaking its brand. I live in Bali, and every repair I saw ran on a personal network: a tukang (handyman) you know, reached by text or call. I picked Gojek, Indonesia’s leading super app for rides, food and payments, and asked whether it could own this job.
 
-- No way to compare availability, pricing or reliability.
+Gojek had tried before. Its GoService partnership brought Pinhome’s cleaning and home services into the app in 2021, and that integration ended on February 28, 2022 (Warta Ekonomi, 2022). The demand was real; a partner-run model was the risk.
 
-- The platform constraint: Gojek is already dense, so a new vertical had to feel native and add no friction.
+## 2. Project overview
 
-## 2. Market research: why Indonesia, and why Gojek
+Vision. Make finding and booking a reliable tukang as easy and trustworthy as ordering a Gojek ride.
 
-I compared four Southeast Asian markets and ranked Indonesia first, for its scale of small businesses and the region's largest labor force: both sides of the marketplace are large.
+The market. Indonesia has 65.5 million micro, small and medium businesses. They employ about 97% of the workforce and produce 61.9% of GDP (Antara, July 2025). Gojek’s parent, GoTo, is growing at scale: group core GTV rose 43% year over year to Rp89.8 trillion in Q2 2025, and On-Demand Services GTV grew 9% to Rp16.4 trillion (GoTo, Q2 2025). That means a large base of businesses that need repairs, and an app many already open every day.
 
-Player | Focus | Gap GoTukang fills |
+Problem statement. For business and home owners in Indonesia, finding skilled labor for maintenance is hard. Word of mouth is still the main way to find a tukang, and it brings a chain of problems: no transparent pricing, unreliable scheduling, language barriers and no way to find someone new.
 
-Sejasa | Handyman and renovation marketplace | Web-first, inconsistent quality |
+## 3. Ideation overview
 
-Ayasan | Domestic staff | Little trade depth |
+Scope. A solo project: I made the product calls and tested them with users.
 
-Pinhome | App-based home services | Mostly Jakarta; no super-app reach |
+- 3 in-person interviews with Bali business and property owners who regularly hire tukangs
 
-💡
-Gojek has tried this before. Its home-services partnership with Pinhome ended in early 2022. The opportunity was real but the model was the risk, so GoTukang has Gojek own its tukang network.
+- A four-market comparison (Indonesia, Thailand, the Philippines, Singapore) that ranked Indonesia first on business count and labor supply
 
-## 3. Segment and business case
+- A SWOT analysis of Sejasa, Ayasan and Pinhome, the main home-service players
 
-I chose businesses over households. A shop owner needs a handyman monthly and loses money on a no-show; a homeowner needs one a few times a year. More bookings, more willingness to pay for reliability.
+- Affinity mapping, then problem statements, POVs and How Might We questions
 
-The trade-off in the model: long term, a commission per job. But I cut in-app payment, so the pilot earns no commission by design. Its job is to build a reliable network and repeat demand; commission starts as GoPay adoption grows in the trades.
+- An audit of Gojek’s existing flows (GoRide, GoFood, GoSend, GoPay) to reuse its patterns
 
-## 4. The decisions: what I chose and what I cut
+Player | Focus | Gap GoTukang fills
 
-The biggest call: consistency over novelty. Inside a super app, new patterns are a cost. I spent novelty only where trust required it.
+Sejasa | Handyman and renovation marketplace | Web-first; quality varies by provider
 
-Decision | I chose | Over | Why |
+Ayasan | Domestic staff (maids, drivers, carers) | Little depth in trades
 
-Trust | Ratings and job history | Referrals | Trust has to live in the product |
+Pinhome | App-based home services | Mostly big cities; no super-app reach since leaving Gojek
 
-Reliability | Badges: On Time, Bilingual | Long reviews | Qualify a tukang in seconds |
+None of the people I interviewed knew any of these apps existed. Reach, not features, was the gap.
 
-Requests | Structured scope, budget, photos | Free-text messages | Accurate quotes, fewer back-and-forths |
+Target customer. Two personas came out of the research:
+
+Persona | Who they are | Key goal | Key pain
+
+Prinka | 34, runs a café near the beach in Bali | A business that builds community and serves great coffee | Slow, unreliable repairs have forced the café to close
+
+Paul | 40, owns two villas leased for long and short stays | Scale the business into a legacy for his children | Surprise property issues stop guests from staying
+
+Prinka needs regular, reliable service partners so her café stays open for her customers.
+
+Paul needs quick, reliable fixes and regular maintenance so problems don’t reach his guests.
+
+## 4. Customer segmentation
+
+We prioritized small business owners, the Prinka segment. A shop needs a tukang often and loses money the day something breaks, so the need is frequent and the cost of a no-show is real.
+
+Segment | Impact | Urgency | Size of market | Total
+
+Small business owners (cafés, shops) | 5 | 5 | 4 | 14
+
+Property and villa owners and managers | 5 | 4 | 3 | 12
+
+Households | 3 | 2 | 5 | 10
+
+Scored 1–5, retrospectively from research findings.
+
+Property owners like Paul scored close behind and share the same flow. Households are the biggest group but need help a few times a year and have more patience, so they come later.
+
+## 5. Customer pain point
+
+We prioritized finding a reliable, trustworthy tukang. Every other pain follows from it.
+
+Pain point | Impact | Urgency | Size | Total
+
+Finding a reliable, trustworthy tukang | 5 | 5 | 5 | 15
+
+No-shows and unreliable scheduling | 5 | 4 | 4 | 13
+
+No transparent pricing | 4 | 3 | 4 | 11
+
+Language barrier | 3 | 3 | 3 | 9
+
+Findability: no listings, only referrals | 3 | 3 | 3 | 9
+
+Scored 1–5, retrospectively from research findings.
+
+Participants described the same loop: ask a friend, wait, and hope. Some tukangs didn’t show up, others lacked professionalism or missed the brief. Reliability scored second, but you can’t schedule someone reliable until you can find and judge them.
+
+## 6. Prioritized solution
+
+We chose search and tukang profiles with reviews and badges, so a business owner can judge a tukang in seconds instead of asking around.
+
+Proposed solution | Ease (5 = easy) | Eng. effort (5 = easy) | Effectiveness | Total
+
+Search + tukang profiles with reviews and badges (On Time, Bilingual) | 4 | 4 | 5 | 13
+
+Job request with scope, budget and photos; invite several tukangs | 4 | 3 | 5 | 12
+
+Scheduling | 4 | 3 | 4 | 11
+
+Chat and Q&A with the tukang | 4 | 4 | 3 | 11
+
+Saved tukangs and referrals | 4 | 4 | 2 | 10
+
+In-app payment | 3 | 2 | 2 | 7
+
+QR code scan to book | 3 | 3 | 1 | 7
+
+Large projects and contractor accounts | 2 | 2 | 2 | 6
+
+Scored retrospectively; priorities come from my feature backlog (P1–P3).
+
+Profiles answer the top pain directly and reuse patterns Gojek users already know. The job request came with them, because a profile only helps if you can then ask that person for help.
 
 ⚖️
-The hard call: bidding vs. instant booking. Instant, fixed-price booking is the familiar Gojek pattern. I bet on bidding: tukangs are the workforce the product depends on, and bidding gives them control over jobs and prices. The cost is customer speed, offset with job invites.
 
-- In-app payment was cut. The trades still run largely on cash; forcing digital payment would add friction on both sides.
+The model: invite and propose, not instant booking. Instant, fixed-price booking is the familiar Gojek pattern, but trades jobs vary too much to price up front. The business owner posts one job and invites several tukangs; each one accepts and proposes. Tukangs keep control of the jobs and prices they take, which matters because they are the supply the product depends on. The cost is a slower match, which job statuses (Pending, Accepted, Past) make visible.
 
-- Deferred: saved favorites and tukang referrals (P2); contractor accounts and large multi-trade projects (P3).
+### Key product decisions
 
-## 5. How I designed it
+Decision | I chose | Over | Why
 
-GoTukang enters as one more icon on the Gojek home screen. Describe the job, pick timing, compare tukangs, invite them and track proposals.
+Trust | Ratings, reviews and job history | Referrals | Trust has to live in the product
 
-## 6. Outcome and how I measure success
+Reliability | Badges: On Time, Bilingual | Long reviews | Judge a tukang in seconds
 
-The metric that matters is whether a business books again. In a two-sided marketplace I'd watch supply just as closely: jobs with no bids, and tukang no-shows.
+Requests | Structured job: issue type, photos, schedule | Free-text messages | Better proposals, less back-and-forth
 
-Stage | Metric | Signal |
+Look and feel | Gojek’s existing patterns, like GoCar scheduling | New UI | Inside a super app, new patterns are a cost
 
-Request | Job posted with scope and budget | Real |
+### What we cut, and why
 
-Match | Job gets 2+ bids | Real |
+Cut | Moved to | Reason
 
-Complete | Tukang arrives on time | Real |
+In-app payment | Later phase | The trades still run largely on cash; forcing digital payment adds friction on both sides
 
-Repeat | Books again within 60 days | North star |
+QR code scan to book | Removed | Testers said it was nice to have, but the audience could struggle with it
 
-## 7. Growth plan and roadmap
+Saved tukangs and tukang referrals | P2 | Saved tukangs were tested in lo-fi; both matter once a network exists, not first
 
-Phase | What ships | Gate |
+Large-project bidding and contractor accounts | P3 | A different product for multi-trade jobs
 
-Pilot (one city) | Job creation, bidding, badges, scheduling, messaging, ratings | Most jobs get 2+ bids |
+## 7. Develop MVP
 
-Expand | More cities and trades, favorites, referrals | Repeat bookings hold |
+The MVP is one loop inside Gojek: search a problem → compare tukang profiles → create a job → invite tukangs → track proposals and schedule, with chat before you commit and a review after the job.
 
-Scale | Contractor accounts, large projects, GoPay payment | Commission covers acquisition |
+North star: businesses that book again within 60 days. A first booking can be curiosity; a second one means the tukang showed up and did the work. In a two-sided marketplace I’d watch supply just as closely: jobs with no proposals, and tukang no-shows.
 
-← 💇🏾‍♀️ Just Hair
-All work →
+Stage | Metric | Signal
+
+Request | Job posted with issue, photos and schedule | Real
+
+Match | Job gets 2+ proposals | Real
+
+Complete | Tukang arrives on time | Real
+
+Repeat | Books again within 60 days | North star
+
+### User stories and acceptance criteria
+
+# | User story | Acceptance criteria
+
+1 | As a business owner, I want to search by problem and area, so that I find tukangs who can fix it near me. | Search by service type and location. Results and categories follow Gojek’s search layout.
+
+2 | As a business owner, I want to see a tukang’s reviews, badges and services, so that I can trust them before I ask. | Profile shows rating, review count, badges and services, with a path to all reviews. Save or share the profile.
+
+3 | As a business owner, I want to create a job and invite several tukangs to it, so that I get a fast, fair response. | Choose an existing job or create one with name, issue type and photos. Invite more than one tukang to the same job.
+
+4 | As a business owner, I want to give my available times, so that a tukang can accept quickly. | Scheduling mirrors GoCar: open availability for the day, the week or custom dates and times.
+
+5 | As a business owner, I want to track each job’s status and contact the tukang, so that I know who is coming and when. | Jobs page with Pending, Accepted and Past. Message, call or request a change from the job.
+
+The test plan’s bar: 100% task success, 0% errors.
+
+### User flow
+
+Every path from Gojek’s home screen: search and browse, saved tukangs, pending jobs and changes to a booking. Select the flow to open it full size.
+
+Stories 1–5: from Gojek home to search, a tukang profile, the job request and confirmation, plus messaging and changes to an upcoming job.
+
+## 8. Launch plan
+
+GoTukang hasn’t launched; this is how it would go to market.
+
+- First market: small businesses and villa owners in Bali, where the research happened and where referrals still decide who gets hired.
+
+- Supply first: recruit tukangs through the referral networks they already use, so jobs get proposals from day one.
+
+- Promotion: an entry on Gojek’s home screen and cross-promotion to GoFood merchants, who are already small businesses on the platform.
+
+Phase | What ships | Gate to move on
+
+Pilot (Bali) | Search, profiles and badges, job requests and invites, scheduling, chat, reviews | Most jobs get 2+ proposals
+
+Expand | More cities and trades, saved tukangs, tukang referrals | Repeat bookings hold
+
+Scale | Contractor accounts, large projects, GoPay payment | Commission covers acquisition
+
+↩️
+
+Rollback. If jobs go unanswered or no-shows rise, new job requests pause in the affected area or trade until tukang supply recovers. Bookings already accepted carry on.
+
+### How it will make money
+
+Long term, a commission on each completed job. The pilot earns no commission by design, because I cut in-app payment: its job is to build a reliable network and repeat demand. Commission starts once GoPay is common in the trades.
+
+## 9. Customer feedback and iterations
+
+Four rounds of lo-fi testing reshaped the flows before any visual design. Over seven days, testers reviewed three flows: book from saved tukangs, search for a plumber and schedule, and message or change a booking.
+
+What we saw | What I changed
+
+People needed to send one job to several tukangs | Added a job selection or creation step to the request flow
+
+Upcoming appointments didn’t reflect that tukangs must accept first | Replaced them with a Jobs page: Pending, Accepted, Past
+
+The scheduling screen felt unfamiliar | Rebuilt it to mirror GoCar scheduling, with open-availability options
+
+The QR scan was nice to have but a barrier for this audience | Removed it
+
+Search sections all looked the same | Rebuilt the layout to match Gojek’s search pages
+
+The large profile photo took space but added little | Shrank it and added badges, services and reviews
+
+Saving tukangs to groups was confusing | Added a heart to save or unsave, plus quick actions on the saved list
+
+Then an unmoderated Maze test of the hi-fi “search and request a tukang” flow with 7 participants: 100% task success, and testers rated it 5 out of 5. Four small changes followed:
+
+- Images that fit Gojek’s brand, generated with Midjourney
+
+- Missing UI states: calendar pickers, dropdowns and keyboard input
+
+- Clearer button text where people hesitated
+
+- The request split into two distinct steps
+
+Gojek has no public design system, so I rebuilt the fonts, colors, icons and components from screenshots to keep the feature native.
+
+Appendix: the full feature backlog
+
+All 8 features from my feature map, ranked P1 to P3.
+
+Priority | Feature | Outcome
+
+P1 | Specialty tukang search | In prototype
+
+P1 | Schedule a tukang service | In prototype
+
+P1 | Chat and Q&A before booking | In prototype
+
+P1 | Tukang reviews | In prototype
+
+P2 | Save tukangs for future jobs | Tested in lo-fi; deferred
+
+P2 | Tukang referral | Deferred
+
+P3 | Large-project bidding | Deferred
+
+P3 | General contractor and tukang manager accounts | Deferred
+
+← 💇🏾‍♀️ Just Hair All work →
+
 
 
 === SOURCE: Writing (/writing) ===

@@ -2,104 +2,259 @@
 <article class="prose" style="width: 100%; max-width: 768px; margin: 0 auto; padding: 0 24px 96px; box-sizing: border-box">
 <div aria-hidden="true" style="font-size: 72px; line-height: 1; margin-top: -40px">🔧</div>
 <h1 style="margin: 16px 0 8px; font-size: 40px; line-height: 48px; font-weight: 700; letter-spacing: -0.01em">GoTukang</h1>
-<p style="font-size: 18px; line-height: 28px; color: #5F5E5B">A concept for adding on-demand handyman services to Gojek, built on trust signals instead of word of mouth.</p>
+<p style="font-size: 18px; line-height: 28px; color: #5F5E5B">A concept for booking trusted handymen inside Gojek, so business owners in Bali can stop relying on “I know a guy.”</p>
 <dl style="display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 10px 16px; margin: 0 0 24px; padding: 16px 0; border-top: 1px solid #E9E9E7; border-bottom: 1px solid #E9E9E7; font-size: 14px; line-height: 20px">
 <dt style="color: #787774">Status</dt>
-<dd style="margin: 0"><span style="font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 4px; background: #E8DEEE; color: #412454">Concept</span> <span style="color: #787774">Personal project, not affiliated with Gojek</span></dd>
-<dt style="color: #787774">Type</dt>
-<dd style="margin: 0">Feature add inside an existing super app</dd>
+<dd style="margin: 0"><span style="font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 4px; background: #D3E5EF; color: #183347">Concept, tested hi-fi prototype</span></dd>
+<dt style="color: #787774">Context</dt>
+<dd style="margin: 0">Solo project: add a feature to an existing app. Not affiliated with Gojek.</dd>
 <dt style="color: #787774">My role</dt>
-<dd style="margin: 0">Product lead, UX researcher and UI designer</dd>
+<dd style="margin: 0">Product lead and designer: research, prioritization, design and testing</dd>
+<dt style="color: #787774">Timeline</dt>
+<dd style="margin: 0">July to September 2025</dd>
 <dt style="color: #787774">Segment</dt>
-<dd style="margin: 0">Small business owners and property managers in Indonesia</dd>
+<dd style="margin: 0">Small business and property owners in Bali</dd>
 <dt style="color: #787774">Research</dt>
-<dd style="margin: 0">3 interviews, plus market and competitive analysis</dd>
+<dd style="margin: 0">3 in-person interviews, competitive SWOT and a four-market analysis</dd>
+<dt style="color: #787774">Tested with</dt>
+<dd style="margin: 0">4 rounds of lo-fi testing; 7 participants in Maze</dd>
 <dt style="color: #787774">North star</dt>
-<dd style="margin: 0">Repeat bookings</dd>
+<dd style="margin: 0">Books again within 60 days</dd>
 <dt style="color: #787774">Stack</dt>
-<dd style="margin: 0">Figma, Notion</dd>
-<dt style="color: #787774">Links</dt>
-<dd style="margin: 0"><a href="https://www.figma.com/design/igPZdWlknoxrc5BMzLKEc3/GoTukang--Project-File?node-id=928-10887">Figma file</a></dd>
+<dd style="margin: 0">Figma, FigJam, Maze, Notion, Midjourney</dd>
 </dl>
 <div style="padding: 20px 24px; border-radius: 6px; background: #EBF0FD; border-left: 3px solid #3360E5; margin: 0 0 16px">
-<div style="font-size: 12px; font-weight: 600; color: #2A50C4; margin-bottom: 6px">Outcome</div>
-<div style="font-size: 16px; line-height: 26px">A concept grounded in market research suggesting Gojek is well placed to own this vertical. The bet: in a market that runs on referrals, trust has to be built into the product itself.</div>
+<div style="font-size: 12px; font-weight: 600; color: #2A50C4; margin-bottom: 6px">Result</div>
+<div style="font-size: 16px; line-height: 26px">I took GoTukang from interviews with Bali business owners to a tested hi-fi prototype inside Gojek’s app, solo, in under three months. In the final Maze test, all 7 participants sent a job invite to a tukang of their choice (100% task success) and rated the experience 5 out of 5.</div>
 </div>
-<h2>1. The problem and who had it</h2>
-<p><strong>Business owners and property managers had no reliable way to get handyman work done, and it cost them revenue.</strong> A no-show means a shop can't open or a rental can't turn over.</p>
+<div style="display: flex; gap: 12px; padding: 16px 20px; border-radius: 6px; background: #F7F7F5; margin: 0 0 16px">
+<span aria-hidden="true" style="font-size: 20px; line-height: 26px">💬</span>
+<div style="font-size: 16px; line-height: 26px">“If you ask anyone in Indonesia how they get something fixed in their home or business, they’ll tell you they know a guy.” <span style="color: #787774">From my project brief</span></div>
+</div>
+<h2>1. Background</h2>
+<p>The brief was to add a feature to an existing app without breaking its brand. I live in Bali, and every repair I saw ran on a personal network: a <em>tukang</em> (handyman) you know, reached by text or call. I picked Gojek, Indonesia’s leading super app for rides, food and payments, and asked whether it could own this job.</p>
+<p>Gojek had tried before. Its GoService partnership brought Pinhome’s cleaning and home services into the app in 2021, and that integration ended on February 28, 2022 (<a href="https://wartaekonomi.co.id/read391484/per-februari-pinhome-home-service-tidak-terintregasi-dengan-gojek-berikut-ketentuan-terbarunya">Warta Ekonomi, 2022</a>). The demand was real; a partner-run model was the risk.</p>
+<h2>2. Project overview</h2>
+<p><strong>Vision.</strong> Make finding and booking a reliable tukang as easy and trustworthy as ordering a Gojek ride.</p>
+<p><strong>The market.</strong> Indonesia has 65.5 million micro, small and medium businesses. They employ about 97% of the workforce and produce 61.9% of GDP (<a href="https://mataram.antaranews.com/berita/470849/indonesias-655-mln-msmes-absorb-119-mln-workers-govt">Antara, July 2025</a>). Gojek’s parent, GoTo, is growing at scale: group core GTV rose 43% year over year to Rp89.8 trillion in Q2 2025, and On-Demand Services GTV grew 9% to Rp16.4 trillion (<a href="https://www.gotocompany.com/en/news/press/goto-group-achieves-record-breaking-performance-as-it-reports-2025-second-quarter-earnings">GoTo, Q2 2025</a>). That means a large base of businesses that need repairs, and an app many already open every day.</p>
+<p><strong>Problem statement.</strong> For business and home owners in Indonesia, finding skilled labor for maintenance is hard. Word of mouth is still the main way to find a tukang, and it brings a chain of problems: no transparent pricing, unreliable scheduling, language barriers and no way to find someone new.</p>
+<h2>3. Ideation overview</h2>
+<p><strong>Scope.</strong> A solo project: I made the product calls and tested them with users.</p>
 <ul>
-<li><strong>Sourcing ran on personal networks,</strong> so finding someone trustworthy was slow.</li>
-<li><strong>No way to compare</strong> availability, pricing or reliability.</li>
-<li><strong>The platform constraint:</strong> Gojek is already dense, so a new vertical had to feel native and add no friction.</li>
+<li>3 in-person interviews with Bali business and property owners who regularly hire tukangs</li>
+<li>A four-market comparison (Indonesia, Thailand, the Philippines, Singapore) that ranked Indonesia first on business count and labor supply</li>
+<li>A SWOT analysis of Sejasa, Ayasan and Pinhome, the main home-service players</li>
+<li>Affinity mapping, then problem statements, POVs and How Might We questions</li>
+<li>An audit of Gojek’s existing flows (GoRide, GoFood, GoSend, GoPay) to reuse its patterns</li>
 </ul>
-<h2>2. Market research: why Indonesia, and why Gojek</h2>
-<p><strong>I compared four Southeast Asian markets and ranked Indonesia first,</strong> for its scale of small businesses and the region's largest labor force: both sides of the marketplace are large.</p>
 <div class="tbl-wrap">
 <table class="tbl">
 <thead><tr><th>Player</th><th>Focus</th><th>Gap GoTukang fills</th></tr></thead>
 <tbody>
-<tr><td style="font-weight: 500">Sejasa</td><td>Handyman and renovation marketplace</td><td>Web-first, inconsistent quality</td></tr>
-<tr><td style="font-weight: 500">Ayasan</td><td>Domestic staff</td><td>Little trade depth</td></tr>
-<tr><td style="font-weight: 500">Pinhome</td><td>App-based home services</td><td>Mostly Jakarta; no super-app reach</td></tr>
+<tr><td style="font-weight: 500">Sejasa</td><td>Handyman and renovation marketplace</td><td>Web-first; quality varies by provider</td></tr>
+<tr><td style="font-weight: 500">Ayasan</td><td>Domestic staff (maids, drivers, carers)</td><td>Little depth in trades</td></tr>
+<tr><td style="font-weight: 500">Pinhome</td><td>App-based home services</td><td>Mostly big cities; no super-app reach since leaving Gojek</td></tr>
 </tbody>
 </table>
 </div>
-<div style="display: flex; gap: 12px; padding: 16px 20px; border-radius: 6px; background: #F7F7F5; margin: 0 0 8px">
-<span aria-hidden="true" style="font-size: 20px; line-height: 26px">💡</span>
-<div style="font-size: 16px; line-height: 26px"><strong>Gojek has tried this before.</strong> Its home-services partnership with Pinhome ended in early 2022. The opportunity was real but the model was the risk, so GoTukang has Gojek own its tukang network.</div>
+<p>None of the people I interviewed knew any of these apps existed. Reach, not features, was the gap.</p>
+<p><strong>Target customer.</strong> Two personas came out of the research:</p>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Persona</th><th>Who they are</th><th>Key goal</th><th>Key pain</th></tr></thead>
+<tbody>
+<tr><td style="font-weight: 500">Prinka</td><td>34, runs a café near the beach in Bali</td><td>A business that builds community and serves great coffee</td><td>Slow, unreliable repairs have forced the café to close</td></tr>
+<tr><td style="font-weight: 500">Paul</td><td>40, owns two villas leased for long and short stays</td><td>Scale the business into a legacy for his children</td><td>Surprise property issues stop guests from staying</td></tr>
+</tbody>
+</table>
 </div>
-<h2>3. Segment and business case</h2>
-<p><strong>I chose businesses over households.</strong> A shop owner needs a handyman monthly and loses money on a no-show; a homeowner needs one a few times a year. More bookings, more willingness to pay for reliability.</p>
-<p><strong>The trade-off in the model:</strong> long term, a commission per job. But I cut in-app payment, so the pilot earns no commission by design. Its job is to build a reliable network and repeat demand; commission starts as GoPay adoption grows in the trades.</p>
-<h2>4. The decisions: what I chose and what I cut</h2>
-<p><strong>The biggest call: consistency over novelty.</strong> Inside a super app, new patterns are a cost. I spent novelty only where trust required it.</p>
+<figure style="margin: 24px 0">
+<a href="/images/personas/gotukang-prinka.jpg" target="_blank" rel="noopener"><img alt="Persona: Prinka, café owner" src="/images/personas/gotukang-prinka.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/></a>
+<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">Prinka needs regular, reliable service partners so her café stays open for her customers.</figcaption>
+</figure>
+<figure style="margin: 24px 0">
+<a href="/images/personas/gotukang-paul.jpg" target="_blank" rel="noopener"><img alt="Persona: Paul, property owner" src="/images/personas/gotukang-paul.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/></a>
+<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">Paul needs quick, reliable fixes and regular maintenance so problems don’t reach his guests.</figcaption>
+</figure>
+<h2>4. Customer segmentation</h2>
+<p><strong>We prioritized small business owners,</strong> the Prinka segment. A shop needs a tukang often and loses money the day something breaks, so the need is frequent and the cost of a no-show is real.</p>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Segment</th><th>Impact</th><th>Urgency</th><th>Size of market</th><th>Total</th></tr></thead>
+<tbody>
+<tr style="background: #EBF0FD"><td style="font-weight: 600">Small business owners (cafés, shops)</td><td>5</td><td>5</td><td>4</td><td><strong>14</strong></td></tr>
+<tr><td style="font-weight: 500">Property and villa owners and managers</td><td>5</td><td>4</td><td>3</td><td>12</td></tr>
+<tr><td style="font-weight: 500">Households</td><td>3</td><td>2</td><td>5</td><td>10</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size: 13px; line-height: 20px; color: #787774; margin-top: -4px">Scored 1–5, retrospectively from research findings.</p>
+<p>Property owners like Paul scored close behind and share the same flow. Households are the biggest group but need help a few times a year and have more patience, so they come later.</p>
+<h2>5. Customer pain point</h2>
+<p><strong>We prioritized finding a reliable, trustworthy tukang.</strong> Every other pain follows from it.</p>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Pain point</th><th>Impact</th><th>Urgency</th><th>Size</th><th>Total</th></tr></thead>
+<tbody>
+<tr style="background: #EBF0FD"><td style="font-weight: 600">Finding a reliable, trustworthy tukang</td><td>5</td><td>5</td><td>5</td><td><strong>15</strong></td></tr>
+<tr><td style="font-weight: 500">No-shows and unreliable scheduling</td><td>5</td><td>4</td><td>4</td><td>13</td></tr>
+<tr><td style="font-weight: 500">No transparent pricing</td><td>4</td><td>3</td><td>4</td><td>11</td></tr>
+<tr><td style="font-weight: 500">Language barrier</td><td>3</td><td>3</td><td>3</td><td>9</td></tr>
+<tr><td style="font-weight: 500">Findability: no listings, only referrals</td><td>3</td><td>3</td><td>3</td><td>9</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size: 13px; line-height: 20px; color: #787774; margin-top: -4px">Scored 1–5, retrospectively from research findings.</p>
+<p>Participants described the same loop: ask a friend, wait, and hope. Some tukangs didn’t show up, others lacked professionalism or missed the brief. Reliability scored second, but you can’t schedule someone reliable until you can find and judge them.</p>
+<h2>6. Prioritized solution</h2>
+<p><strong>We chose search and tukang profiles with reviews and badges,</strong> so a business owner can judge a tukang in seconds instead of asking around.</p>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Proposed solution</th><th>Ease (5 = easy)</th><th>Eng. effort (5 = easy)</th><th>Effectiveness</th><th>Total</th></tr></thead>
+<tbody>
+<tr style="background: #EBF0FD"><td style="font-weight: 600">Search + tukang profiles with reviews and badges (On Time, Bilingual)</td><td>4</td><td>4</td><td>5</td><td><strong>13</strong></td></tr>
+<tr><td style="font-weight: 500">Job request with scope, budget and photos; invite several tukangs</td><td>4</td><td>3</td><td>5</td><td>12</td></tr>
+<tr><td style="font-weight: 500">Scheduling</td><td>4</td><td>3</td><td>4</td><td>11</td></tr>
+<tr><td style="font-weight: 500">Chat and Q&amp;A with the tukang</td><td>4</td><td>4</td><td>3</td><td>11</td></tr>
+<tr><td style="font-weight: 500">Saved tukangs and referrals</td><td>4</td><td>4</td><td>2</td><td>10</td></tr>
+<tr><td style="font-weight: 500">In-app payment</td><td>3</td><td>2</td><td>2</td><td>7</td></tr>
+<tr><td style="font-weight: 500">QR code scan to book</td><td>3</td><td>3</td><td>1</td><td>7</td></tr>
+<tr><td style="font-weight: 500">Large projects and contractor accounts</td><td>2</td><td>2</td><td>2</td><td>6</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size: 13px; line-height: 20px; color: #787774; margin-top: -4px">Scored retrospectively; priorities come from my feature backlog (P1–P3).</p>
+<p>Profiles answer the top pain directly and reuse patterns Gojek users already know. The job request came with them, because a profile only helps if you can then ask that person for help.</p>
+<div style="display: flex; gap: 12px; padding: 16px 20px; border-radius: 6px; background: #F7F7F5; margin: 0 0 16px">
+<span aria-hidden="true" style="font-size: 20px; line-height: 26px">⚖️</span>
+<div style="font-size: 16px; line-height: 26px"><strong>The model: invite and propose, not instant booking.</strong> Instant, fixed-price booking is the familiar Gojek pattern, but trades jobs vary too much to price up front. The business owner posts one job and invites several tukangs; each one accepts and proposes. Tukangs keep control of the jobs and prices they take, which matters because they are the supply the product depends on. The cost is a slower match, which job statuses (Pending, Accepted, Past) make visible.</div>
+</div>
+<h3>Key product decisions</h3>
 <div class="tbl-wrap">
 <table class="tbl">
 <thead><tr><th>Decision</th><th>I chose</th><th>Over</th><th>Why</th></tr></thead>
 <tbody>
-<tr><td style="font-weight: 500">Trust</td><td>Ratings and job history</td><td>Referrals</td><td>Trust has to live in the product</td></tr>
-<tr><td style="font-weight: 500">Reliability</td><td>Badges: On Time, Bilingual</td><td>Long reviews</td><td>Qualify a tukang in seconds</td></tr>
-<tr><td style="font-weight: 500">Requests</td><td>Structured scope, budget, photos</td><td>Free-text messages</td><td>Accurate quotes, fewer back-and-forths</td></tr>
+<tr><td style="font-weight: 500">Trust</td><td>Ratings, reviews and job history</td><td>Referrals</td><td>Trust has to live in the product</td></tr>
+<tr><td style="font-weight: 500">Reliability</td><td>Badges: On Time, Bilingual</td><td>Long reviews</td><td>Judge a tukang in seconds</td></tr>
+<tr><td style="font-weight: 500">Requests</td><td>Structured job: issue type, photos, schedule</td><td>Free-text messages</td><td>Better proposals, less back-and-forth</td></tr>
+<tr><td style="font-weight: 500">Look and feel</td><td>Gojek’s existing patterns, like GoCar scheduling</td><td>New UI</td><td>Inside a super app, new patterns are a cost</td></tr>
 </tbody>
 </table>
 </div>
-<div style="display: flex; gap: 12px; padding: 16px 20px; border-radius: 6px; background: #F7F7F5; margin: 0 0 16px">
-<span aria-hidden="true" style="font-size: 20px; line-height: 26px">⚖️</span>
-<div style="font-size: 16px; line-height: 26px"><strong>The hard call: bidding vs. instant booking.</strong> Instant, fixed-price booking is the familiar Gojek pattern. I bet on bidding: tukangs are the workforce the product depends on, and bidding gives them control over jobs and prices. The cost is customer speed, offset with job invites.</div>
+<h3>What we cut, and why</h3>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Cut</th><th>Moved to</th><th>Reason</th></tr></thead>
+<tbody>
+<tr><td style="font-weight: 500">In-app payment</td><td>Later phase</td><td>The trades still run largely on cash; forcing digital payment adds friction on both sides</td></tr>
+<tr><td style="font-weight: 500">QR code scan to book</td><td>Removed</td><td>Testers said it was nice to have, but the audience could struggle with it</td></tr>
+<tr><td style="font-weight: 500">Saved tukangs and tukang referrals</td><td>P2</td><td>Saved tukangs were tested in lo-fi; both matter once a network exists, not first</td></tr>
+<tr><td style="font-weight: 500">Large-project bidding and contractor accounts</td><td>P3</td><td>A different product for multi-trade jobs</td></tr>
+</tbody>
+</table>
 </div>
-<ul>
-<li><strong>In-app payment was cut.</strong> The trades still run largely on cash; forcing digital payment would add friction on both sides.</li>
-<li><strong>Deferred:</strong> saved favorites and tukang referrals (P2); contractor accounts and large multi-trade projects (P3).</li>
-</ul>
-<h2>5. How I designed it</h2>
-<figure style="margin: 24px 0">
-<img alt="Eight GoTukang screens from the Gojek home screen to tracking proposals" src="/images/screens/gotukang-screens.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/>
-<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">GoTukang enters as one more icon on the Gojek home screen. Describe the job, pick timing, compare tukangs, invite them and track proposals.</figcaption>
-</figure>
-<h2>6. Outcome and how I measure success</h2>
-<p><strong>The metric that matters is whether a business books again.</strong> In a two-sided marketplace I'd watch supply just as closely: jobs with no bids, and tukang no-shows.</p>
+<h2>7. Develop MVP</h2>
+<p>The MVP is one loop inside Gojek: <strong>search a problem → compare tukang profiles → create a job → invite tukangs → track proposals and schedule</strong>, with chat before you commit and a review after the job.</p>
+<p><strong>North star: businesses that book again within 60 days.</strong> A first booking can be curiosity; a second one means the tukang showed up and did the work. In a two-sided marketplace I’d watch supply just as closely: jobs with no proposals, and tukang no-shows.</p>
 <div class="tbl-wrap">
 <table class="tbl">
 <thead><tr><th>Stage</th><th>Metric</th><th>Signal</th></tr></thead>
 <tbody>
-<tr><td style="font-weight: 500">Request</td><td>Job posted with scope and budget</td><td>Real</td></tr>
-<tr><td style="font-weight: 500">Match</td><td>Job gets 2+ bids</td><td>Real</td></tr>
+<tr><td style="font-weight: 500">Request</td><td>Job posted with issue, photos and schedule</td><td>Real</td></tr>
+<tr><td style="font-weight: 500">Match</td><td>Job gets 2+ proposals</td><td>Real</td></tr>
 <tr><td style="font-weight: 500">Complete</td><td>Tukang arrives on time</td><td>Real</td></tr>
-<tr style="background: #EBF0FD"><td style="font-weight: 600">Repeat</td><td style="font-weight: 600">Books again within 60 days</td><td style="font-weight: 600; color: #2A50C4">North star</td></tr>
+<tr style="background: #EBF0FD"><td style="font-weight: 600">Repeat</td><td>Books again within 60 days</td><td>North star</td></tr>
 </tbody>
 </table>
 </div>
-<h2>7. Growth plan and roadmap</h2>
+<h3>User stories and acceptance criteria</h3>
 <div class="tbl-wrap">
 <table class="tbl">
-<thead><tr><th>Phase</th><th>What ships</th><th>Gate</th></tr></thead>
+<thead><tr><th>#</th><th>User story</th><th>Acceptance criteria</th></tr></thead>
 <tbody>
-<tr><td style="font-weight: 500">Pilot (one city)</td><td>Job creation, bidding, badges, scheduling, messaging, ratings</td><td>Most jobs get 2+ bids</td></tr>
-<tr><td style="font-weight: 500">Expand</td><td>More cities and trades, favorites, referrals</td><td>Repeat bookings hold</td></tr>
+<tr><td style="font-weight: 500">1</td><td>As a business owner, I want to search by problem and area, so that I find tukangs who can fix it near me.</td><td>Search by service type and location. Results and categories follow Gojek’s search layout.</td></tr>
+<tr><td style="font-weight: 500">2</td><td>As a business owner, I want to see a tukang’s reviews, badges and services, so that I can trust them before I ask.</td><td>Profile shows rating, review count, badges and services, with a path to all reviews. Save or share the profile.</td></tr>
+<tr><td style="font-weight: 500">3</td><td>As a business owner, I want to create a job and invite several tukangs to it, so that I get a fast, fair response.</td><td>Choose an existing job or create one with name, issue type and photos. Invite more than one tukang to the same job.</td></tr>
+<tr><td style="font-weight: 500">4</td><td>As a business owner, I want to give my available times, so that a tukang can accept quickly.</td><td>Scheduling mirrors GoCar: open availability for the day, the week or custom dates and times.</td></tr>
+<tr><td style="font-weight: 500">5</td><td>As a business owner, I want to track each job’s status and contact the tukang, so that I know who is coming and when.</td><td>Jobs page with Pending, Accepted and Past. Message, call or request a change from the job.</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size: 13px; line-height: 20px; color: #787774; margin-top: -4px">The test plan’s bar: 100% task success, 0% errors.</p>
+<h3>User flow</h3>
+<p>Every path from Gojek’s home screen: search and browse, saved tukangs, pending jobs and changes to a booking. Select the flow to open it full size.</p>
+<figure style="margin: 24px 0">
+<a href="/images/flows/gotukang-flow.jpg" target="_blank" rel="noopener"><img alt="User flow: scheduling a tukang" src="/images/flows/gotukang-flow.jpg" style="width: 100%; border-radius: 10px; display: block; border: 1px solid #E9E9E7"/></a>
+<figcaption style="font-size: 14px; color: #787774; margin-top: 8px">Stories 1–5: from Gojek home to search, a tukang profile, the job request and confirmation, plus messaging and changes to an upcoming job.</figcaption>
+</figure>
+<h2>8. Launch plan</h2>
+<p><strong>GoTukang hasn’t launched;</strong> this is how it would go to market.</p>
+<ul>
+<li><strong>First market:</strong> small businesses and villa owners in Bali, where the research happened and where referrals still decide who gets hired.</li>
+<li><strong>Supply first:</strong> recruit tukangs through the referral networks they already use, so jobs get proposals from day one.</li>
+<li><strong>Promotion:</strong> an entry on Gojek’s home screen and cross-promotion to GoFood merchants, who are already small businesses on the platform.</li>
+</ul>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Phase</th><th>What ships</th><th>Gate to move on</th></tr></thead>
+<tbody>
+<tr><td style="font-weight: 500">Pilot (Bali)</td><td>Search, profiles and badges, job requests and invites, scheduling, chat, reviews</td><td>Most jobs get 2+ proposals</td></tr>
+<tr><td style="font-weight: 500">Expand</td><td>More cities and trades, saved tukangs, tukang referrals</td><td>Repeat bookings hold</td></tr>
 <tr><td style="font-weight: 500">Scale</td><td>Contractor accounts, large projects, GoPay payment</td><td>Commission covers acquisition</td></tr>
 </tbody>
 </table>
 </div>
+<div style="display: flex; gap: 12px; padding: 16px 20px; border-radius: 6px; background: #F7F7F5; margin: 0 0 16px">
+<span aria-hidden="true" style="font-size: 20px; line-height: 26px">↩️</span>
+<div style="font-size: 16px; line-height: 26px"><strong>Rollback.</strong> If jobs go unanswered or no-shows rise, new job requests pause in the affected area or trade until tukang supply recovers. Bookings already accepted carry on.</div>
+</div>
+<h3>How it will make money</h3>
+<p>Long term, a commission on each completed job. The pilot earns no commission by design, because I cut in-app payment: its job is to build a reliable network and repeat demand. Commission starts once GoPay is common in the trades.</p>
+<h2>9. Customer feedback and iterations</h2>
+<p><strong>Four rounds of lo-fi testing reshaped the flows</strong> before any visual design. Over seven days, testers reviewed three flows: book from saved tukangs, search for a plumber and schedule, and message or change a booking.</p>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>What we saw</th><th>What I changed</th></tr></thead>
+<tbody>
+<tr><td style="font-weight: 500">People needed to send one job to several tukangs</td><td>Added a job selection or creation step to the request flow</td></tr>
+<tr><td style="font-weight: 500">Upcoming appointments didn’t reflect that tukangs must accept first</td><td>Replaced them with a Jobs page: Pending, Accepted, Past</td></tr>
+<tr><td style="font-weight: 500">The scheduling screen felt unfamiliar</td><td>Rebuilt it to mirror GoCar scheduling, with open-availability options</td></tr>
+<tr><td style="font-weight: 500">The QR scan was nice to have but a barrier for this audience</td><td>Removed it</td></tr>
+<tr><td style="font-weight: 500">Search sections all looked the same</td><td>Rebuilt the layout to match Gojek’s search pages</td></tr>
+<tr><td style="font-weight: 500">The large profile photo took space but added little</td><td>Shrank it and added badges, services and reviews</td></tr>
+<tr><td style="font-weight: 500">Saving tukangs to groups was confusing</td><td>Added a heart to save or unsave, plus quick actions on the saved list</td></tr>
+</tbody>
+</table>
+</div>
+<p>Then an <strong>unmoderated Maze test</strong> of the hi-fi “search and request a tukang” flow with 7 participants: <strong>100% task success</strong>, and testers rated it 5 out of 5. Four small changes followed:</p>
+<ul>
+<li>Images that fit Gojek’s brand, generated with Midjourney</li>
+<li>Missing UI states: calendar pickers, dropdowns and keyboard input</li>
+<li>Clearer button text where people hesitated</li>
+<li>The request split into two distinct steps</li>
+</ul>
+<p>Gojek has no public design system, so I rebuilt the fonts, colors, icons and components from screenshots to keep the feature native.</p>
+<details class="toggle" style="margin-top: 40px">
+<summary><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>Appendix: the full feature backlog</summary>
+<div class="body">
+<p>All 8 features from my feature map, ranked P1 to P3.</p>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th>Priority</th><th>Feature</th><th>Outcome</th></tr></thead>
+<tbody>
+<tr><td style="font-weight: 500">P1</td><td>Specialty tukang search</td><td>In prototype</td></tr>
+<tr><td style="font-weight: 500">P1</td><td>Schedule a tukang service</td><td>In prototype</td></tr>
+<tr><td style="font-weight: 500">P1</td><td>Chat and Q&amp;A before booking</td><td>In prototype</td></tr>
+<tr><td style="font-weight: 500">P1</td><td>Tukang reviews</td><td>In prototype</td></tr>
+<tr><td style="font-weight: 500">P2</td><td>Save tukangs for future jobs</td><td>Tested in lo-fi; deferred</td></tr>
+<tr><td style="font-weight: 500">P2</td><td>Tukang referral</td><td>Deferred</td></tr>
+<tr><td style="font-weight: 500">P3</td><td>Large-project bidding</td><td>Deferred</td></tr>
+<tr><td style="font-weight: 500">P3</td><td>General contractor and tukang manager accounts</td><td>Deferred</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 64px; padding-top: 20px; border-top: 1px solid #E9E9E7; font-size: 14px">
 <a href="/work/just-hair" style="color: #787774">← 💇🏾‍♀️ Just Hair</a>
 <a href="/work" style="font-weight: 500">All work →</a>
