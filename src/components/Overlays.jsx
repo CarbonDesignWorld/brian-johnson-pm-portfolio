@@ -231,6 +231,14 @@ function Inbox({ onClose }) {
                       <a className="ghost" href="/chat">Ask the AI assistant</a>
                     </div>
                   )}
+                  {n.links?.length > 0 && (
+                    <div className="item-actions">
+                      {n.links.map((l, i) => (
+                        <a key={l.href} className={i === 0 ? 'book' : 'ghost'} href={l.href}
+                          {...(l.href.startsWith('http') ? { target: '_blank', rel: 'noopener' } : {})}>{l.label}</a>
+                      ))}
+                    </div>
+                  )}
                 </div>
               )}
             </div>

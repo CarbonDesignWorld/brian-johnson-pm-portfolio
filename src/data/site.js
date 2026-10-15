@@ -132,6 +132,10 @@ export const INBOX = [
   {
     id: 'prepare-v0-1', emoji: '🌦️', title: 'Prepare v0.1 shipped', type: 'Product update', date: 'Sep 2026',
     body: 'A weather app that tells you what to wear and what to pack. Built and shipped solo.',
+    links: [
+      { label: 'Try Prepare ↗', href: 'https://weather-apps-garage--today-weather-ap.us-east4.hosted.app/' },
+      { label: 'Read the case study', href: '/work/prepare' },
+    ],
   },
 ];
 
