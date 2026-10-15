@@ -141,7 +141,7 @@ export const SEARCH = [
   { g: 'Case studies', emoji: '🎓', title: 'C.O.T', snippet: 'MVP · tutoring rebuilt around prepaid credits', href: '/work/cot', k: 'cot online tutoring credits edtech client mvp parents booking gamification' },
   { g: 'Case studies', emoji: '💇🏾‍♀️', title: 'Just Hair', snippet: 'MVP · AI hair care that explains before it recommends', href: '/work/just-hair', k: 'just hair ai textured research llm multimodal women routine' },
   { g: 'Case studies', emoji: '🔧', title: 'GoTukang', snippet: 'Concept · a handyman marketplace inside Gojek', href: '/work/gotukang', k: 'gotukang gojek marketplace handyman tukang indonesia concept invite proposals commission' },
-  { g: 'Pages', emoji: '👋', title: 'Home', snippet: 'About Brian, experience and selected work', href: '/', k: 'home about experience notion bravely bonusly autodesk carbon design world career' },
+  { g: 'Pages', emoji: '👋', title: 'Home', snippet: 'About Brian, experience and selected work', href: '/', k: 'home about experience notion bravely bonusly autodesk carbon design world career how i work working style disc' },
   { g: 'Pages', emoji: '🗂️', title: 'Work', snippet: 'All four products, gallery and table', href: '/work', k: 'work projects portfolio case studies' },
   { g: 'Pages', emoji: '✉️', title: 'Contact', snippet: 'Book a call, email, LinkedIn, GitHub, resume', href: '/contact', k: 'contact email resume linkedin github meeting book call' },
   { g: 'Pages', emoji: '💬', title: 'Ask about Brian', snippet: 'An AI assistant that answers from his case studies', href: '/chat', k: 'ai chat assistant ask questions' },

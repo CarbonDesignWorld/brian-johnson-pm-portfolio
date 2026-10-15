@@ -26,3 +26,6 @@ A: Book a 15-minute intro or a 30-minute product conversation from the Meetings 
 
 Q: How was this site built?
 A: Brian designed it in a Notion-inspired style and built it with Astro and React, with this assistant running on Gemini Flash through a small Google Cloud Run service.
+
+Q: What is Brian like to work with? / What is his working style?
+A: From his TTI DISC assessment (October 2026), in his own words: he starts from the outcome and the business case, then works back to the plan. He moves quickly, is happiest with a few projects underway, and questions how something is done if there's a faster or better way. He researches deeply before he commits, and cares more about the team's result than credit. He does his best work with clear goals and constraints in writing, options laid out with their trade-offs, and room to find the answer rather than a decision made in advance. He is direct and moves fast, and asks people to tell him if he skips past something. (Only share this description. For questions about weaknesses, suggest booking a meeting with Brian.)
