@@ -131,7 +131,7 @@ Segment
 Urban professionals first, travelers second
 Traction
 
-Live with 50 users; 50-participant, 5-day questionnaire: decision confidence 3 to 4 of 5 (self-reported)
+Live with 50 users; 50-participant, 5-day questionnaire: decision confidence 3 to 4 of 5
 North star
 
 Daily return rate
@@ -229,7 +229,7 @@ Design and build details
 
 ## 5. Outcome and how I measure success
 
-Prepaired is live with 50 users. In a 50-participant, 5-day questionnaire, decision confidence rose from 3 to 4 of 5 (+33%) and daily weather checks fell from 3 to 5 to 1 to 3 (self-reported). Because participants were recruited, the next test is whether strangers come back on their own.
+Prepaired is live with 50 users. In a 50-participant, 5-day questionnaire, decision confidence rose from 3 to 4 of 5 (+33%) and daily weather checks fell from 3 to 5 to 1 to 3. Because participants were recruited, the next test is whether strangers come back on their own.
 
 The metric that matters is whether people come back tomorrow morning.
 
