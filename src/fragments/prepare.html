@@ -5,15 +5,15 @@
 <p style="font-size: 18px; line-height: 28px; color: #5F5E5B">A weather app that answers the question people actually open it for: what do I wear and what do I pack today?</p>
 <dl style="display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 10px 16px; margin: 0 0 24px; padding: 16px 0; border-top: 1px solid #E9E9E7; border-bottom: 1px solid #E9E9E7; font-size: 14px; line-height: 20px">
 <dt style="font-size: 12px; color: #787774">Status</dt>
-<dd style="margin: 0"><span style="font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 4px; background: #DBEDDB; color: #1C3829">Shipped v0.1</span></dd>
+<dd style="margin: 0"><span style="font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 4px; background: #DBEDDB; color: #1C3829">Live · 50 users</span></dd>
 <dt style="font-size: 12px; color: #787774">My role</dt>
 <dd style="margin: 0">Product lead, designer and builder</dd>
 <dt style="font-size: 12px; color: #787774">Platform</dt>
-<dd style="margin: 0">Mobile web</dd>
+<dd style="margin: 0">Web app; mobile launch planned for January</dd>
 <dt style="font-size: 12px; color: #787774">Segment</dt>
 <dd style="margin: 0">Urban professionals first, travelers second</dd>
 <dt style="font-size: 12px; color: #787774">Traction</dt>
-<dd style="margin: 0">Live with 50 users; 50-participant, 5-day questionnaire: decision confidence 3 to 4 of 5</dd>
+<dd style="margin: 0">Live with 50 users; in a 50-participant, 5-day questionnaire, decision confidence rose from 3 to 4 of 5</dd>
 <dt style="font-size: 12px; color: #787774">North star</dt>
 <dd style="margin: 0">Daily return rate</dd>
 <dt style="font-size: 12px; color: #787774">Stack</dt>
@@ -23,7 +23,7 @@
 </dl>
 <div style="padding: 20px 24px; border-radius: 6px; background: #EBF0FD; border-left: 3px solid #3360E5; margin: 0 0 16px">
 <div style="font-size: 11px; font-weight: 500; color: #2A50C4; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 6px">Outcome</div>
-<div style="font-size: 16px; line-height: 26px">Shipped v0.1 solo, tested it with 5 users, then ran a 50-participant, 5-day questionnaire; it is live with 50 users. The core bet: lead with a decision instead of data, and use AI only where it's safe to.</div>
+<div style="font-size: 16px; line-height: 26px">Built and shipped v0.1 solo, tested it with 5 users, then ran a 50-participant, 5-day questionnaire; it is live with 50 users and mobile launch is planned for January. The core bet: lead with a decision instead of data, and use AI only where it's safe to.</div>
 </div>
 <div style="display: flex; gap: 12px; padding: 16px 20px; border-radius: 6px; background: #F7F7F5; margin: 0 0 8px">
 <span aria-hidden="true" style="font-size: 20px; line-height: 26px">💬</span>
@@ -34,18 +34,19 @@
 <p>Someone close to me asked for exactly this: an app that just tells them what to wear. That's when it clicked that this is an accessibility problem, not a convenience feature. Some people simply need help deciding what to wear.</p>
 <details class="toggle">
 <summary><svg aria-hidden="true" class="chev" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="m9 6 6 6-6 6"></path></svg>How I validated it</summary>
-<div class="body"><p>Before building, I talked to many people about how they dress for the weather. Almost everyone described the same friction and had ideas for fixing it, which told me the problem was common, not personal.</p></div>
+<div class="body"><p>Before building, I talked to many people about how they dress for the weather. Almost everyone described the same friction and had ideas for fixing it, which told me the problem was common, not personal.</p><p>I then went wider: research across multiple sources, a teardown of 6 weather apps, a 5-user prototype test and a 50-participant questionnaire. <strong>60% of US adults check the weather daily, but only 25% say it changes their plans.</strong> That gap between checking and deciding is the product.</p></div>
 </details>
 <h2>2. Segment and business case</h2>
 <p><strong>Prepaired is for anyone who checks the weather, but I prioritized urban professionals.</strong> City weather changes what they wear across work, evening plans and the weekend. They check the forecast at a predictable moment, which makes the habit easy to design for. <strong>Travelers come second:</strong> packing is the same decision stretched over days.</p>
-<p>The category is crowded and free, so the case rests on owning the decision layer, a daily habit, and very low running costs.</p>
+<p>The category is crowded and free, so the case rests on owning the decision layer, a daily habit, and very low running costs. <strong>Revenue comes from brands, not from users,</strong> and sponsored placements are barred from changing the weather advice itself.</p>
 <div class="tbl-wrap">
 <table class="tbl">
 <thead><tr><th>Monetization path</th><th>How it pays</th><th>Why it fits</th></tr></thead>
 <tbody>
-<tr><td style="font-weight: 500">Premium personalization</td><td>Subscription for personal modes and briefings</td><td>Deepens a habit people already have</td></tr>
+<tr><td style="font-weight: 500">Founding partners</td><td>The first 50 brand partners join free</td><td>Builds the catalog and proof before charging</td></tr>
+<tr><td style="font-weight: 500">Partner fees</td><td>$500 a month plus 8% when weather drives a purchase</td><td>Brands pay at a purchase-intent moment; modeled at about $330K in year-2 fees at 100K monthly users</td></tr>
+<tr><td style="font-weight: 500">Catalog taxonomy</td><td>7 tags map any retailer's catalog into one system</td><td>Lets the rules engine recommend real products without custom work per brand</td></tr>
 <tr><td style="font-weight: 500">Wardrobe integration</td><td>Recommendations from your own closet</td><td>High switching cost once a closet is catalogued</td></tr>
-<tr><td style="font-weight: 500">Commerce in Pack</td><td>Affiliate links on recommended gear</td><td>Recommendations are purchase-intent moments</td></tr>
 </tbody>
 </table>
 </div>
@@ -66,7 +67,7 @@
 <ul>
 <li><strong>Most weather data points.</strong> Showing more data well takes careful design, and it isn't what people came for.</li>
 <li><strong>Pack items beyond the umbrella.</strong> Rain is the most obvious, highest-stakes call. The umbrella is even suppressed when wind would break it.</li>
-<li><strong>Custom avatar and styling.</strong> Too heavy for v0.1, and the core value didn't depend on it.</li>
+<li><strong>The dress avatar and graphic weather background.</strong> I tested them against garment images (13 + 5, shown two at a time) with a small group. Users clearly preferred the images, so v0.2 drops the avatar.</li>
 <li><strong>Richer assistant replies:</strong> no images, products or multiple-choice answers yet.</li>
 </ul>
 <h2>4. How I designed and built it</h2>
@@ -89,12 +90,14 @@
 <li><strong>Decision first, data second.</strong> Wear and Pack lead the screen; forecast detail sits below.</li>
 <li><strong>An editorial voice:</strong> serif headlines over a clean sans, like a morning paper.</li>
 <li><strong>Mobile first,</strong> with fluid layouts that scale up.</li>
+<li><strong>Privacy from day one:</strong> minimal calendar permissions, Google security approval in progress, and sponsored placements barred from changing weather advice.</li>
 <li><strong>Build:</strong> React, TypeScript and Tailwind; 23 custom icons; deployed to Google Cloud Run on every push.</li>
 </ul>
 </div>
 </details>
 <h2>5. Outcome and how I measure success</h2>
 <p>Prepaired is live with 50 users. In a 50-participant, 5-day questionnaire, decision confidence rose from 3 to 4 of 5 (+33%) and daily weather checks fell from 3 to 5 to 1 to 3. Because participants were recruited, the next test is whether strangers come back on their own.</p>
+<p><strong>Live usage corrected a feature.</strong> Only 2% of users (1 of 50) built the manual pack list. I replaced it with AI packing recommendations drawn from calendar events, venue and local culture, reworked onboarding to match, and rolled the feature back until the full pipeline is ready.</p>
 <p><strong>The metric that matters is whether people come back tomorrow morning.</strong></p>
 <div class="tbl-wrap">
 <table class="tbl">
@@ -109,13 +112,13 @@
 </table>
 </div>
 <h2>6. Growth plan and roadmap</h2>
-<p><strong>The roadmap follows the habit loop: get people in, make the answer trustworthy, then give them a reason to come back without thinking.</strong></p>
+<p><strong>The roadmap follows the habit loop: get people in, make the answer trustworthy, then give them a reason to come back without thinking.</strong> It runs in three stages: consumer decisions, retail partnerships, then your personal wardrobe. I prioritized 5 P0 and 4 P1 items, set 6 exit metrics for V1, and am targeting 1,000 users by June 2027.</p>
 <div class="tbl-wrap">
 <table class="tbl">
 <thead><tr><th>Phase</th><th>What ships</th><th>Gate to the next phase</th></tr></thead>
 <tbody>
 <tr><td style="font-weight: 500; white-space: nowrap">v0.1 <span style="font-size: 11px; padding: 2px 6px; border-radius: 4px; background: #DBEDDB; color: #1C3829">Shipped</span></td><td>Rules engine, wear recommendations, umbrella call, AI copy, travel assistant</td><td>50 live users</td></tr>
-<tr><td style="font-weight: 500">v0.2</td><td>Sign-up, avatar, custom pack lists, deeper weather data</td><td>Daily return holds with strangers</td></tr>
+<tr><td style="font-weight: 500">v0.2</td><td>Sign-up, garment images in place of the avatar, AI packing recommendations, deeper weather data</td><td>Daily return holds with strangers</td></tr>
 <tr><td style="font-weight: 500">v0.3</td><td>Travel and shopping, calendar integrations, AI that learns your routine</td><td>Retention proven before monetizing</td></tr>
 </tbody>
 </table>

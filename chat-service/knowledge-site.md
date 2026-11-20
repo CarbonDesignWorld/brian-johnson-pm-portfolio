@@ -119,19 +119,19 @@ A weather app that answers the question people actually open it for: what do I w
 
 Status
 
-Shipped v0.1
+Live · 50 users
 My role
 
 Product lead, designer and builder
 Platform
 
-Mobile web
+Web app; mobile launch planned for January
 Segment
 
 Urban professionals first, travelers second
 Traction
 
-Live with 50 users; 50-participant, 5-day questionnaire: decision confidence 3 to 4 of 5
+Live with 50 users; in a 50-participant, 5-day questionnaire, decision confidence rose from 3 to 4 of 5
 North star
 
 Daily return rate
@@ -144,7 +144,7 @@ Live app · Figma · Repo
 
 Outcome
 
-Shipped v0.1 solo, tested it with 5 users, then ran a 50-participant, 5-day questionnaire; it is live with 50 users. The core bet: lead with a decision instead of data, and use AI only where it's safe to.
+Built and shipped v0.1 solo, tested it with 5 users, then ran a 50-participant, 5-day questionnaire; it is live with 50 users and mobile launch is planned for January. The core bet: lead with a decision instead of data, and use AI only where it's safe to.
 
 💬
 "This saves me so much time in the morning! I don't have to think. I just get ready, pack and go!" Research participant
@@ -159,19 +159,23 @@ How I validated it
 
 Before building, I talked to many people about how they dress for the weather. Almost everyone described the same friction and had ideas for fixing it, which told me the problem was common, not personal.
 
+I then went wider: research across multiple sources, a teardown of 6 weather apps, a 5-user prototype test and a 50-participant questionnaire. 60% of US adults check the weather daily, but only 25% say it changes their plans. That gap between checking and deciding is the product.
+
 ## 2. Segment and business case
 
 Prepaired is for anyone who checks the weather, but I prioritized urban professionals. City weather changes what they wear across work, evening plans and the weekend. They check the forecast at a predictable moment, which makes the habit easy to design for. Travelers come second: packing is the same decision stretched over days.
 
-The category is crowded and free, so the case rests on owning the decision layer, a daily habit, and very low running costs.
+The category is crowded and free, so the case rests on owning the decision layer, a daily habit, and very low running costs. Revenue comes from brands, not from users, and sponsored placements are barred from changing the weather advice itself.
 
 Monetization path | How it pays | Why it fits |
 
-Premium personalization | Subscription for personal modes and briefings | Deepens a habit people already have |
+Founding partners | The first 50 brand partners join free | Builds the catalog and proof before charging |
+
+Partner fees | $500 a month plus 8% when weather drives a purchase | Brands pay at a purchase-intent moment; modeled at about $330K in year-2 fees at 100K monthly users |
+
+Catalog taxonomy | 7 tags map any retailer's catalog into one system | Lets the rules engine recommend real products without custom work per brand |
 
 Wardrobe integration | Recommendations from your own closet | High switching cost once a closet is catalogued |
-
-Commerce in Pack | Affiliate links on recommended gear | Recommendations are purchase-intent moments |
 
 ## 3. The decisions: what I chose and what I cut
 
@@ -193,7 +197,7 @@ Uncertainty | A confidence score | Hiding it | Honesty on borderline days builds
 
 - Pack items beyond the umbrella. Rain is the most obvious, highest-stakes call. The umbrella is even suppressed when wind would break it.
 
-- Custom avatar and styling. Too heavy for v0.1, and the core value didn't depend on it.
+- The dress avatar and graphic weather background. I tested them against garment images (13 + 5, shown two at a time) with a small group. Users clearly preferred the images, so v0.2 drops the avatar.
 
 - Richer assistant replies: no images, products or multiple-choice answers yet.
 
@@ -225,11 +229,15 @@ Design and build details
 
 - Mobile first, with fluid layouts that scale up.
 
+- Privacy from day one: minimal calendar permissions, Google security approval in progress, and sponsored placements barred from changing weather advice.
+
 - Build: React, TypeScript and Tailwind; 23 custom icons; deployed to Google Cloud Run on every push.
 
 ## 5. Outcome and how I measure success
 
 Prepaired is live with 50 users. In a 50-participant, 5-day questionnaire, decision confidence rose from 3 to 4 of 5 (+33%) and daily weather checks fell from 3 to 5 to 1 to 3. Because participants were recruited, the next test is whether strangers come back on their own.
+
+Live usage corrected a feature. Only 2% of users (1 of 50) built the manual pack list. I replaced it with AI packing recommendations drawn from calendar events, venue and local culture, reworked onboarding to match, and rolled the feature back until the full pipeline is ready.
 
 The metric that matters is whether people come back tomorrow morning.
 
@@ -247,13 +255,13 @@ Expand | Shared with a friend | Real |
 
 ## 6. Growth plan and roadmap
 
-The roadmap follows the habit loop: get people in, make the answer trustworthy, then give them a reason to come back without thinking.
+The roadmap follows the habit loop: get people in, make the answer trustworthy, then give them a reason to come back without thinking. It runs in three stages: consumer decisions, retail partnerships, then your personal wardrobe. I prioritized 5 P0 and 4 P1 items, set 6 exit metrics for V1, and am targeting 1,000 users by June 2027.
 
 Phase | What ships | Gate to the next phase |
 
 v0.1 Shipped | Rules engine, wear recommendations, umbrella call, AI copy, travel assistant | 50 live users |
 
-v0.2 | Sign-up, avatar, custom pack lists, deeper weather data | Daily return holds with strangers |
+v0.2 | Sign-up, garment images in place of the avatar, AI packing recommendations, deeper weather data | Daily return holds with strangers |
 
 v0.3 | Travel and shopping, calendar integrations, AI that learns your routine | Retention proven before monetizing |
 
