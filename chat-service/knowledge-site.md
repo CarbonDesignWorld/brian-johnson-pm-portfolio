@@ -39,7 +39,7 @@ Open Work →
 
 A weather app that tells you what to wear and pack
 
-Shipped
+Live
 Consumer AI
 
 🎓 C.O.T
