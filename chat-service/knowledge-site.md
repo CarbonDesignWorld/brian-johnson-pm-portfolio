@@ -274,7 +274,7 @@ COT’s tutoring ran on intake forms and phone calls. We turned it into a self-s
 
 Status
 
-MVP, in development
+MVP, lightweight version shipped
 
 Client
 
@@ -486,7 +486,7 @@ Story 8: find an event, RSVP and add it to the calendar.
 
 ## 8. Launch plan
 
-The app is in development and hasn’t launched yet, so this is the go-to-market plan we handed over, not a result.
+A lightweight version of the app has shipped, and this is the go-to-market plan we handed over, not a measured result.
 
 - First market: existing customers who already book through the manual intake, mainly parents and adult learners. They already trust the service, so the app replaces a process instead of having to win them over.
 
