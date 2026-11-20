@@ -73,9 +73,9 @@ Time |
 Product offering |
 
 Carbon Design World |
-Product Builder |
+Product Solutions Manager |
 2025 – Present |
-Product design and builds for early-stage products |
+Product research, definition and design for client and in-house AI products, from discovery through MVP spec and launch plan |
 
 Career Break |
 Professional Development |
@@ -83,17 +83,17 @@ Professional Development |
 Full-time training in product design, management and AI |
 
 Notion |
-SaaS Account Executive |
+Enterprise Solutions Account Manager |
 2022 – 2024 |
-Connected workspace for docs, wikis and projects |
+Connected workspace for docs, wikis and projects; enterprise accounts, pilots and project management betas |
 
 Bravely |
-SaaS Account Executive |
+Enterprise Account Executive |
 2021 – 2022 |
 On-demand professional coaching for employees |
 
 Bonusly |
-SaaS Account Executive |
+Founding Account Executive |
 2018 – 2021 |
 Employee rewards and recognition platform |
 
