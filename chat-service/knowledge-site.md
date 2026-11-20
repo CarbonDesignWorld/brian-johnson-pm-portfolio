@@ -131,20 +131,20 @@ Segment
 Urban professionals first, travelers second
 Traction
 
-~100 site visitors; 20 research participants using it daily
+Live with 50 users; 50-participant, 5-day study: decision confidence 3.0 to 4.4 of 5 (self-reported)
 North star
 
 Daily return rate
 Stack
 
-React, TypeScript, Tailwind, Gemini Flash, Open-Meteo, Google Cloud Run
+React, TypeScript, Tailwind, Claude, Open-Meteo, Google Cloud Run
 Links
 
 Live app · Figma · Repo
 
 Outcome
 
-Shipped v0.1 solo and tested it with 20 research participants who used it daily. The core bet: lead with a decision instead of data, and use AI only where it's safe to.
+Shipped v0.1 solo, tested it with 5 users, then ran a 50-participant, 5-day study; it is live with 50 users. The core bet: lead with a decision instead of data, and use AI only where it's safe to.
 
 💬
 "This saves me so much time in the morning! I don't have to think. I just get ready, pack and go!" Research participant
@@ -175,7 +175,7 @@ Commerce in Pack | Affiliate links on recommended gear | Recommendations are pur
 
 ## 3. The decisions: what I chose and what I cut
 
-The biggest call: AI writes the words, but rules make the recommendations. Letting a language model decide what to wear is fast to build but unsafe: it can suggest a t-shirt in a snowstorm. Every clothing and packing decision comes from a rules engine; Gemini only adds the voice and answers follow-up questions.
+The biggest call: AI writes the words, but rules make the recommendations. Letting a language model decide what to wear is fast to build but unsafe: it can suggest a t-shirt in a snowstorm. Every clothing and packing decision comes from a rules engine; Claude only adds the voice and answers follow-up questions.
 
 Decision | I chose | Over | Why |
 
@@ -207,7 +207,7 @@ Open-Meteo, free
 Rules engine
 Decides wear and pack
 
-Gemini Flash
+Claude
 Writes the words
 
 Interface
@@ -229,7 +229,7 @@ Design and build details
 
 ## 5. Outcome and how I measure success
 
-v0.1 is live with ~100 site visitors. I recruited 20 research participants to use it daily; because they were recruited, the next test is whether strangers come back on their own.
+Prepaired is live with 50 users. In a 50-participant, 5-day study, decision confidence rose from 3.0 to 4.4 of 5 (+47%) and daily weather checks fell from 3 to 5 to 1 to 3 (self-reported). Because participants were recruited, the next test is whether strangers come back on their own.
 
 The metric that matters is whether people come back tomorrow morning.
 
@@ -251,7 +251,7 @@ The roadmap follows the habit loop: get people in, make the answer trustworthy, 
 
 Phase | What ships | Gate to the next phase |
 
-v0.1 Shipped | Rules engine, wear recommendations, umbrella call, AI copy, travel assistant | 20 participants using it daily |
+v0.1 Shipped | Rules engine, wear recommendations, umbrella call, AI copy, travel assistant | 50 live users |
 
 v0.2 | Sign-up, avatar, custom pack lists, deeper weather data | Daily return holds with strangers |
 

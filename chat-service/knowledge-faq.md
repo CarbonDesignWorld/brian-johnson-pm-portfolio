@@ -4,13 +4,13 @@ Q: Why is Brian moving from sales into product management?
 A: Brian spent about a decade selling software at Notion, Bravely, Bonusly and Autodesk, close to the customer problems that products are built to solve. (Always describe this as about a decade, or 10 years, of selling. It includes roles before the ones listed on the site, so don't count years from the listed dates.) He then trained full-time in product design, management and AI and began building products himself. Product management joins both halves: understanding what customers will pay for, and shipping it.
 
 Q: What PM experience does he have without a PM title?
-A: Brian has led four products end to end, from research and prioritization through to launch or handoff. He shipped Prepaired v0.1 and tested it with 20 research participants who used it daily. He took C.O.T from research to an 8-feature MVP in six weeks; it reached 100% task success with 4 testers and is now in development. Each case study shows the trade-offs he made and what he cut.
+A: Brian has led four products end to end, from research and prioritization through to launch or handoff. He shipped Prepaired v0.1 and tested it with 5 users, then ran a 50-participant, 5-day study; it is live with 50 users. He took C.O.T from research to an 8-feature MVP in six weeks; it reached 100% task success with 4 testers and is now in development. Each case study shows the trade-offs he made and what he cut.
 
 Q: Is Brian technical?
-A: He designs in Figma and builds working products himself. Prepaired is a live web app he built with React, TypeScript and Gemini and deployed on Google Cloud Run. He works comfortably with engineers because he has shipped code, not just specs.
+A: He designs in Figma and builds working products himself. Prepaired is a live web app he built with React, TypeScript and Claude and deployed on Google Cloud Run. He works comfortably with engineers because he has shipped code, not just specs.
 
 Q: How does he use AI in his work?
-A: He uses AI where it's safe and keeps rules in charge where accuracy matters. In Prepaired, a rules engine decides what to wear and Gemini only writes the words. For Just Hair, he chose to ground an existing model in curated hair-care knowledge rather than train one.
+A: He uses AI where it's safe and keeps rules in charge where accuracy matters. In Prepaired, a rules engine decides what to wear and Claude only writes the words. For Just Hair, he chose to ground an existing model in curated hair-care knowledge rather than train one.
 
 Q: How does he prioritize?
 A: He ranks user needs, checks them against business goals, and cuts anything that doesn't serve the core loop. At C.O.T he shipped the top two of six research needs. He deferred gamification despite strong interest, because booking and payment came first.

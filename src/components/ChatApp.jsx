@@ -15,7 +15,7 @@ const STARTERS = [
   },
   {
     key: 'prepare', icon: '🌦️', label: 'Prepaired in 60 seconds', q: 'Walk me through Prepaired in 60 seconds',
-    a: 'Prepaired answers what to wear and what to pack today, instead of showing raw weather data. Brian built and shipped v0.1 himself, and 20 research participants used it daily.\n\nThe key decision: a rules engine makes every clothing call, and Gemini only writes the words, so advice can’t be made up. He cut most weather data, extra pack items and avatars to ship fast.',
+    a: 'Prepaired answers what to wear and what to pack today, instead of showing raw weather data. Brian built and shipped v0.1 himself, and it is live with 50 users.\n\nThe key decision: a rules engine makes every clothing call, and Claude only writes the words, so advice can’t be made up. He cut most weather data, extra pack items and avatars to ship fast.',
     sources: [{ title: 'Prepaired case study', href: '/work/prepare' }],
   },
   {

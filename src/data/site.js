@@ -40,7 +40,7 @@ export const PROJECTS = [
   {
     slug: 'prepare', emoji: '🌦️', name: 'Prepaired', href: '/work/prepare', cover: '/images/covers/prepare.jpg', alt: 'Prepaired on a laptop',
     blurb: 'A weather app that answers what to wear and what to pack, using rules for decisions and AI for the words.',
-    status: 'Shipped', type: 'Consumer AI', segment: 'Urban professionals, then travelers', result: '20 research participants using it daily', year: '2026',
+    status: 'Shipped', type: 'Consumer AI', segment: 'Urban professionals, then travelers', result: 'Live with 50 users', year: '2026',
   },
   {
     slug: 'cot', emoji: '🎓', name: 'C.O.T', href: '/work/cot', cover: '/images/covers/cot.jpg', alt: 'C.O.T app on a phone',

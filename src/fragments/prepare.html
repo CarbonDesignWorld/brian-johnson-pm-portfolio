@@ -13,17 +13,17 @@
 <dt style="font-size: 12px; color: #787774">Segment</dt>
 <dd style="margin: 0">Urban professionals first, travelers second</dd>
 <dt style="font-size: 12px; color: #787774">Traction</dt>
-<dd style="margin: 0">~100 site visitors; 20 research participants using it daily</dd>
+<dd style="margin: 0">Live with 50 users; 50-participant, 5-day study: decision confidence 3.0 to 4.4 of 5 (self-reported)</dd>
 <dt style="font-size: 12px; color: #787774">North star</dt>
 <dd style="margin: 0">Daily return rate</dd>
 <dt style="font-size: 12px; color: #787774">Stack</dt>
-<dd style="margin: 0">React, TypeScript, Tailwind, Gemini Flash, Open-Meteo, Google Cloud Run</dd>
+<dd style="margin: 0">React, TypeScript, Tailwind, Claude, Open-Meteo, Google Cloud Run</dd>
 <dt style="font-size: 12px; color: #787774">Links</dt>
 <dd style="margin: 0"><a href="https://weather-apps-garage--today-weather-ap.us-east4.hosted.app">Live app</a> · <a href="https://www.figma.com/design/iqRERPs9QoMaKJPOMgdtRY/Prepaired?node-id=39-1498">Figma</a> · <a href="https://github.com/CarbonDesignWorld/Weather_Pro">Repo</a></dd>
 </dl>
 <div style="padding: 20px 24px; border-radius: 6px; background: #EBF0FD; border-left: 3px solid #3360E5; margin: 0 0 16px">
 <div style="font-size: 11px; font-weight: 500; color: #2A50C4; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 6px">Outcome</div>
-<div style="font-size: 16px; line-height: 26px">Shipped v0.1 solo and tested it with 20 research participants who used it daily. The core bet: lead with a decision instead of data, and use AI only where it's safe to.</div>
+<div style="font-size: 16px; line-height: 26px">Shipped v0.1 solo, tested it with 5 users, then ran a 50-participant, 5-day study; it is live with 50 users. The core bet: lead with a decision instead of data, and use AI only where it's safe to.</div>
 </div>
 <div style="display: flex; gap: 12px; padding: 16px 20px; border-radius: 6px; background: #F7F7F5; margin: 0 0 8px">
 <span aria-hidden="true" style="font-size: 20px; line-height: 26px">💬</span>
@@ -50,7 +50,7 @@
 </table>
 </div>
 <h2>3. The decisions: what I chose and what I cut</h2>
-<p><strong>The biggest call: AI writes the words, but rules make the recommendations.</strong> Letting a language model decide what to wear is fast to build but unsafe: it can suggest a t-shirt in a snowstorm. Every clothing and packing decision comes from a rules engine; Gemini only adds the voice and answers follow-up questions.</p>
+<p><strong>The biggest call: AI writes the words, but rules make the recommendations.</strong> Letting a language model decide what to wear is fast to build but unsafe: it can suggest a t-shirt in a snowstorm. Every clothing and packing decision comes from a rules engine; Claude only adds the voice and answers follow-up questions.</p>
 <div class="tbl-wrap">
 <table class="tbl">
 <thead><tr><th>Decision</th><th>I chose</th><th>Over</th><th>Why</th></tr></thead>
@@ -74,7 +74,7 @@
 <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 8px; margin: 0 0 8px">
 <div style="flex: 1 1 140px; padding: 14px 16px; border: 1px solid #E9E9E7; border-radius: 10px"><div style="font-weight: 600; font-size: 14px">Forecast data</div><div style="font-size: 13px; color: #787774; margin-top: 4px">Open-Meteo, free</div></div>
 <div style="flex: 1 1 140px; padding: 14px 16px; border: 2px solid #3360E5; border-radius: 10px; background: #EBF0FD"><div style="font-weight: 600; font-size: 14px">Rules engine</div><div style="font-size: 13px; color: #5F5E5B; margin-top: 4px">Decides wear and pack</div></div>
-<div style="flex: 1 1 140px; padding: 14px 16px; border: 1px solid #E9E9E7; border-radius: 10px"><div style="font-weight: 600; font-size: 14px">Gemini Flash</div><div style="font-size: 13px; color: #787774; margin-top: 4px">Writes the words</div></div>
+<div style="flex: 1 1 140px; padding: 14px 16px; border: 1px solid #E9E9E7; border-radius: 10px"><div style="font-weight: 600; font-size: 14px">Claude</div><div style="font-size: 13px; color: #787774; margin-top: 4px">Writes the words</div></div>
 <div style="flex: 1 1 140px; padding: 14px 16px; border: 1px solid #E9E9E7; border-radius: 10px"><div style="font-weight: 600; font-size: 14px">Interface</div><div style="font-size: 13px; color: #787774; margin-top: 4px">Renders instantly</div></div>
 </div>
 <p style="font-size: 14px; color: #787774">Rules decide; AI only writes the words. If the model is slow, fallback copy appears instantly.</p>
@@ -94,7 +94,7 @@
 </div>
 </details>
 <h2>5. Outcome and how I measure success</h2>
-<p>v0.1 is live with ~100 site visitors. I recruited 20 research participants to use it daily; because they were recruited, the next test is whether strangers come back on their own.</p>
+<p>Prepaired is live with 50 users. In a 50-participant, 5-day study, decision confidence rose from 3.0 to 4.4 of 5 (+47%) and daily weather checks fell from 3 to 5 to 1 to 3 (self-reported). Because participants were recruited, the next test is whether strangers come back on their own.</p>
 <p><strong>The metric that matters is whether people come back tomorrow morning.</strong></p>
 <div class="tbl-wrap">
 <table class="tbl">
@@ -114,7 +114,7 @@
 <table class="tbl">
 <thead><tr><th>Phase</th><th>What ships</th><th>Gate to the next phase</th></tr></thead>
 <tbody>
-<tr><td style="font-weight: 500; white-space: nowrap">v0.1 <span style="font-size: 11px; padding: 2px 6px; border-radius: 4px; background: #DBEDDB; color: #1C3829">Shipped</span></td><td>Rules engine, wear recommendations, umbrella call, AI copy, travel assistant</td><td>20 participants using it daily</td></tr>
+<tr><td style="font-weight: 500; white-space: nowrap">v0.1 <span style="font-size: 11px; padding: 2px 6px; border-radius: 4px; background: #DBEDDB; color: #1C3829">Shipped</span></td><td>Rules engine, wear recommendations, umbrella call, AI copy, travel assistant</td><td>50 live users</td></tr>
 <tr><td style="font-weight: 500">v0.2</td><td>Sign-up, avatar, custom pack lists, deeper weather data</td><td>Daily return holds with strangers</td></tr>
 <tr><td style="font-weight: 500">v0.3</td><td>Travel and shopping, calendar integrations, AI that learns your routine</td><td>Retention proven before monetizing</td></tr>
 </tbody>
