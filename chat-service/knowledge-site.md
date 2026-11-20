@@ -72,15 +72,15 @@ Role |
 Time |
 Product offering |
 
+Prepaired |
+Founder & Applied AI Product Lead |
+2026 – Present |
+Weather-driven decision app that turns the forecast and your calendar into what to wear and pack; live with 50 users, mobile launch planned for January |
+
 Carbon Design World |
 Product Solutions & Innovation Manager |
-2025 – Present |
+2024 – Present |
 Product research, definition and design for client and in-house AI products, from discovery through MVP spec and launch plan |
-
-Career Break |
-Professional Development |
-2024 – 2025 |
-Full-time training in product design, management and AI |
 
 Notion |
 Enterprise Solutions Account Manager |
