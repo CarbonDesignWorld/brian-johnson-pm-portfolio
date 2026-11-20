@@ -14,9 +14,9 @@ const STARTERS = [
     sources: [{ title: 'C.O.T case study', href: '/work/cot' }],
   },
   {
-    key: 'prepare', icon: '🌦️', label: 'Prepare in 60 seconds', q: 'Walk me through Prepare in 60 seconds',
-    a: 'Prepare answers what to wear and what to pack today, instead of showing raw weather data. Brian built and shipped v0.1 himself, and 20 research participants used it daily.\n\nThe key decision: a rules engine makes every clothing call, and Gemini only writes the words, so advice can’t be made up. He cut most weather data, extra pack items and avatars to ship fast.',
-    sources: [{ title: 'Prepare case study', href: '/work/prepare' }],
+    key: 'prepare', icon: '🌦️', label: 'Prepaired in 60 seconds', q: 'Walk me through Prepaired in 60 seconds',
+    a: 'Prepaired answers what to wear and what to pack today, instead of showing raw weather data. Brian built and shipped v0.1 himself, and 20 research participants used it daily.\n\nThe key decision: a rules engine makes every clothing call, and Gemini only writes the words, so advice can’t be made up. He cut most weather data, extra pack items and avatars to ship fast.',
+    sources: [{ title: 'Prepaired case study', href: '/work/prepare' }],
   },
   {
     key: 'tradeoffs', icon: '⚖️', label: 'How he makes trade-offs', q: 'How does Brian make trade-offs?',

@@ -36,7 +36,7 @@ const KNOWLEDGE = ['knowledge-site.md', 'knowledge-faq.md']
 
 const SOURCES = {
   home: { title: 'Home', href: '/' },
-  prepare: { title: 'Prepare case study', href: '/work/prepare' },
+  prepare: { title: 'Prepaired case study', href: '/work/prepare' },
   cot: { title: 'C.O.T case study', href: '/work/cot' },
   'just-hair': { title: 'Just Hair case study', href: '/work/just-hair' },
   gotukang: { title: 'GoTukang case study', href: '/work/gotukang' },

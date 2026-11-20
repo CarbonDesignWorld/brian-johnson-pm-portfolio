@@ -20,7 +20,7 @@ export const SITE = {
 export const PAGES = {
   '/': { title: 'Home', emoji: '👋' },
   '/work': { title: 'Work', emoji: '🗂️' },
-  '/work/prepare': { title: 'Prepare', emoji: '🌦️' },
+  '/work/prepare': { title: 'Prepaired', emoji: '🌦️' },
   '/work/cot': { title: 'C.O.T', emoji: '🎓' },
   '/work/just-hair': { title: 'Just Hair', emoji: '💇🏾‍♀️' },
   '/work/gotukang': { title: 'GoTukang', emoji: '🔧' },
@@ -38,7 +38,7 @@ const TAG = {
 
 export const PROJECTS = [
   {
-    slug: 'prepare', emoji: '🌦️', name: 'Prepare', href: '/work/prepare', cover: '/images/covers/prepare.jpg', alt: 'Prepare on a laptop',
+    slug: 'prepare', emoji: '🌦️', name: 'Prepaired', href: '/work/prepare', cover: '/images/covers/prepare.jpg', alt: 'Prepaired on a laptop',
     blurb: 'A weather app that answers what to wear and what to pack, using rules for decisions and AI for the words.',
     status: 'Shipped', type: 'Consumer AI', segment: 'Urban professionals, then travelers', result: '20 research participants using it daily', year: '2026',
   },
@@ -130,10 +130,10 @@ export const INBOX = [
     body: 'Four case studies rewritten as product briefs, plus an AI assistant, one-click booking and search.',
   },
   {
-    id: 'prepare-v0-1', emoji: '🌦️', title: 'Prepare v0.1 shipped', type: 'Product update', date: 'Sep 2026',
+    id: 'prepare-v0-1', emoji: '🌦️', title: 'Prepaired v0.1 shipped', type: 'Product update', date: 'Sep 2026',
     body: 'A weather app that tells you what to wear and what to pack. Built and shipped solo.',
     links: [
-      { label: 'Try Prepare ↗', href: 'https://weather-apps-garage--today-weather-ap.us-east4.hosted.app/' },
+      { label: 'Try Prepaired ↗', href: 'https://weather-apps-garage--today-weather-ap.us-east4.hosted.app/' },
       { label: 'Read the case study', href: '/work/prepare' },
     ],
   },
@@ -141,7 +141,7 @@ export const INBOX = [
 
 // Search index: what the search box can find.
 export const SEARCH = [
-  { g: 'Case studies', emoji: '🌦️', title: 'Prepare', snippet: 'Shipped · a weather app that tells you what to wear and pack', href: '/work/prepare', k: 'prepare weather ai gemini rules engine shipped consumer pack outfit open-meteo' },
+  { g: 'Case studies', emoji: '🌦️', title: 'Prepaired', snippet: 'Shipped · a weather app that tells you what to wear and pack', href: '/work/prepare', k: 'prepaired prepare weather ai gemini rules engine shipped consumer pack outfit open-meteo' },
   { g: 'Case studies', emoji: '🎓', title: 'C.O.T', snippet: 'MVP · tutoring rebuilt around prepaid credits', href: '/work/cot', k: 'cot online tutoring credits edtech client mvp parents booking gamification' },
   { g: 'Case studies', emoji: '💇🏾‍♀️', title: 'Just Hair', snippet: 'MVP · AI hair care that explains before it recommends', href: '/work/just-hair', k: 'just hair ai textured research llm multimodal women routine' },
   { g: 'Case studies', emoji: '🔧', title: 'GoTukang', snippet: 'Concept · a handyman marketplace inside Gojek', href: '/work/gotukang', k: 'gotukang gojek marketplace handyman tukang indonesia concept invite proposals commission' },

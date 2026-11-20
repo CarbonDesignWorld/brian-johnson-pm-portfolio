@@ -35,7 +35,7 @@ Book a meeting
 
 Open Work →
 
-🌦️ Prepare
+🌦️ Prepaired
 
 A weather app that tells you what to wear and pack
 
@@ -109,11 +109,11 @@ Construction software, including bid management |
 📝I've built brands in fashion and products in tech.Apr 29, 2026
 
 
-=== SOURCE: Case study: Prepare (/work/prepare) ===
+=== SOURCE: Case study: Prepaired (/work/prepare) ===
 
 🌦️
 
-# Prepare
+# Prepaired
 
 A weather app that answers the question people actually open it for: what do I wear and what do I pack today?
 
@@ -161,7 +161,7 @@ Before building, I talked to many people about how they dress for the weather. A
 
 ## 2. Segment and business case
 
-Prepare is for anyone who checks the weather, but I prioritized urban professionals. City weather changes what they wear across work, evening plans and the weekend. They check the forecast at a predictable moment, which makes the habit easy to design for. Travelers come second: packing is the same decision stretched over days.
+Prepaired is for anyone who checks the weather, but I prioritized urban professionals. City weather changes what they wear across work, evening plans and the weekend. They check the forecast at a predictable moment, which makes the habit easy to design for. Travelers come second: packing is the same decision stretched over days.
 
 The category is crowded and free, so the case rests on owning the decision layer, a daily habit, and very low running costs.
 
@@ -568,7 +568,7 @@ P5 | Multiplayer joint study | Engaging learning
 
 P5 | In-app video call | Engaging learning
 
-← 🌦️ Prepare Next: 💇🏾‍♀️ Just Hair →
+← 🌦️ Prepaired Next: 💇🏾‍♀️ Just Hair →
 
 
 
@@ -582,11 +582,11 @@ An AI hair-care assistant for women with textured hair: it explains your hair be
 
 Status
 
-Concept, tested hi-fi prototype
+In progress: prototype live, launch planned 2027
 
 Context
 
-Solo project, ELVTR product design program
+Founder-led product at Carbon Design World
 
 My role
 
@@ -626,7 +626,7 @@ I took Just Hair from six interviews to a tested hi-fi prototype in six weeks, s
 
 ## 1. Background
 
-Just Hair is my concept project from the ELVTR product design program. I chose it because textured-hair care is a deep, global problem that the industry underserves, and because large language models can finally read a photo and explain what they see in plain language. I owned every stage, and tested the LLM connection for feasibility in Lovable.
+I chose Just Hair because textured-hair care is a deep, global problem that the industry underserves, and because large language models can finally read a photo and explain what they see in plain language. I owned every stage, and tested the LLM connection for feasibility in Lovable.
 
 ## 2. Project overview
 
@@ -916,7 +916,7 @@ A concept for booking trusted handymen inside Gojek, so business owners in Bali 
 
 Status
 
-Concept, tested hi-fi prototype
+In progress: prototype live, launch planned 2027
 
 Context
 
